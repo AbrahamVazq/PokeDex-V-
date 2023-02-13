@@ -53,6 +53,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pOb-f1-fXT" secondAttribute="bottom" id="zfh-OH-KcY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tablePokemon" destination="MVn-yf-7qI" id="XYm-k1-PkH"/>
+                        <outlet property="viewContainer" destination="pOb-f1-fXT" id="Iv5-IX-Yv9"/>
+                        <outlet property="viewPokeInfo" destination="sYJ-f1-TXq" id="hIN-yL-5XO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
