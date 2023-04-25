@@ -119,7 +119,7 @@
 			children = (
 				34F84534299AE3D100D09061 /* View */,
 				34F8452C299AD90000D09061 /* Commons */,
-				A43CD456299ACC7600E1F298 /* Modules */,
+				A43CD456299ACC7600E1F298 /* Model */,
 				A43CD454299ACC5D00E1F298 /* Services */,
 				A43CD43F299AC92700E1F298 /* AppDelegate.swift */,
 				A43CD441299AC92700E1F298 /* SceneDelegate.swift */,
@@ -147,7 +147,7 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A43CD456299ACC7600E1F298 /* Modules */ = {
+		A43CD456299ACC7600E1F298 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				34D82706299AD5C1007CF379 /* Descriptions.swift */,
@@ -158,7 +158,7 @@
 				34D82703299AD5C0007CF379 /* Pokemon_species.swift */,
 				A43CD453299ACC2F00E1F298 /* MainView */,
 			);
-			path = Modules;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
