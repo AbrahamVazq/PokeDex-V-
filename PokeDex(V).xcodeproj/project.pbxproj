@@ -94,6 +94,15 @@
 			path = "PokeDex(V)/Model/MainView";
 			sourceTree = SOURCE_ROOT;
 		};
+		34E4738029F7780A004FAF20 /* SimpleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				34F84535299AE40300D09061 /* SimpleTableViewCell.swift */,
+				34F84536299AE40300D09061 /* SimpleTableViewCell.xib */,
+			);
+			path = SimpleTableViewCell;
+			sourceTree = "<group>";
+		};
 		34F8452C299AD90000D09061 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +124,7 @@
 		34F84534299AE3D100D09061 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				34F84535299AE40300D09061 /* SimpleTableViewCell.swift */,
-				34F84536299AE40300D09061 /* SimpleTableViewCell.xib */,
+				34E4738029F7780A004FAF20 /* SimpleTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
