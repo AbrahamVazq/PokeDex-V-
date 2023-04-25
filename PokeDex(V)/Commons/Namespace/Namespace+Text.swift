@@ -1,9 +1,6 @@
-//
 //  Namespace+Text.swift
 //  PokeDex(V)
-//
 //  Created by Moises Abraham Vazquez Perez on 13/02/23.
-//
 
 import Foundation
 
