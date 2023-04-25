@@ -41,11 +41,11 @@
 		34D82706299AD5C1007CF379 /* Descriptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 		34D82707299AD5C1007CF379 /* Names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
 		34E4735C29F7748B004FAF20 /* PokeServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeServices.swift; sourceTree = "<group>"; };
-		34E4737629F7779D004FAF20 /* mainAllPokemonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonRouter.swift; path = "PokeDex(V)/Modules/MainView/mainAllPokemonRouter.swift"; sourceTree = SOURCE_ROOT; };
-		34E4737729F7779D004FAF20 /* mainAllPokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonViewController.swift; path = "PokeDex(V)/Modules/MainView/mainAllPokemonViewController.swift"; sourceTree = SOURCE_ROOT; };
-		34E4737829F7779D004FAF20 /* mainAllPokemonProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonProtocols.swift; path = "PokeDex(V)/Modules/MainView/mainAllPokemonProtocols.swift"; sourceTree = SOURCE_ROOT; };
-		34E4737929F7779E004FAF20 /* mainAllPokemonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonInteractor.swift; path = "PokeDex(V)/Modules/MainView/mainAllPokemonInteractor.swift"; sourceTree = SOURCE_ROOT; };
-		34E4737A29F7779E004FAF20 /* mainAllPokemonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonPresenter.swift; path = "PokeDex(V)/Modules/MainView/mainAllPokemonPresenter.swift"; sourceTree = SOURCE_ROOT; };
+		34E4737629F7779D004FAF20 /* mainAllPokemonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonRouter.swift; path = "PokeDex(V)/Modules/MainAllPokemon/mainAllPokemonRouter.swift"; sourceTree = SOURCE_ROOT; };
+		34E4737729F7779D004FAF20 /* mainAllPokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonViewController.swift; path = "PokeDex(V)/Modules/MainAllPokemon/mainAllPokemonViewController.swift"; sourceTree = SOURCE_ROOT; };
+		34E4737829F7779D004FAF20 /* mainAllPokemonProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonProtocols.swift; path = "PokeDex(V)/Modules/MainAllPokemon/mainAllPokemonProtocols.swift"; sourceTree = SOURCE_ROOT; };
+		34E4737929F7779E004FAF20 /* mainAllPokemonInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonInteractor.swift; path = "PokeDex(V)/Modules/MainAllPokemon/mainAllPokemonInteractor.swift"; sourceTree = SOURCE_ROOT; };
+		34E4737A29F7779E004FAF20 /* mainAllPokemonPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainAllPokemonPresenter.swift; path = "PokeDex(V)/Modules/MainAllPokemon/mainAllPokemonPresenter.swift"; sourceTree = SOURCE_ROOT; };
 		34F84530299ADB9D00D09061 /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
 		34F84532299ADBF600D09061 /* Namespace+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Namespace+Text.swift"; sourceTree = "<group>"; };
 		34F84535299AE40300D09061 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,15 +73,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		34E4736929F77731004FAF20 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				34E4736B29F77746004FAF20 /* MainView */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		34E4736B29F77746004FAF20 /* MainView */ = {
+		3417D12229F87E390017E6B6 /* MainAllPokemon */ = {
 			isa = PBXGroup;
 			children = (
 				34E4737929F7779E004FAF20 /* mainAllPokemonInteractor.swift */,
@@ -90,9 +82,16 @@
 				34E4737629F7779D004FAF20 /* mainAllPokemonRouter.swift */,
 				34E4737729F7779D004FAF20 /* mainAllPokemonViewController.swift */,
 			);
-			name = MainView;
-			path = "PokeDex(V)/Model/MainView";
-			sourceTree = SOURCE_ROOT;
+			path = MainAllPokemon;
+			sourceTree = "<group>";
+		};
+		34E4736929F77731004FAF20 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3417D12229F87E390017E6B6 /* MainAllPokemon */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
 		};
 		34E4738029F7780A004FAF20 /* SimpleTableViewCell */ = {
 			isa = PBXGroup;
