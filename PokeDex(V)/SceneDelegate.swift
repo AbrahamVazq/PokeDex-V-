@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        guard let _ = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene as! UIWindowScene)
         let vc = mainAllPokemonRouter.createModule()
-        window?.rootViewController = vc
+        let navControlle = UINavigationController(rootViewController: vc)
+        window?.rootViewController = navControlle
         window?.makeKeyAndVisible()
     }
 
