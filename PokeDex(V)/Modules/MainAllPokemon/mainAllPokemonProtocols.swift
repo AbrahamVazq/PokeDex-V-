@@ -24,6 +24,9 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
     var view: mainAllPokemon_PresenterToViewProtocol? { get set }
     var interactor: mainAllPokemon_PresenterToInteractorProtocol? { get set }
     var router: mainAllPokemon_PresenterToRouterProtocol? { get set }
+    
+    func viewDidLoad()
+    
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -47,6 +50,8 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> INTERACTOR
 protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     var presenter: mainAllPokemon_InteractorToPresenterProtocol? { get set }
+    
+    func getAllPokemon()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -69,6 +74,8 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
+    func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
+    func errorToGetPokemon(with entries: [Pokemon_entries])
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

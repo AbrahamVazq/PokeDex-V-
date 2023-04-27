@@ -9,6 +9,15 @@ import Foundation
 
 class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
     weak var presenter: mainAllPokemon_InteractorToPresenterProtocol?
+    
+    func getAllPokemon(){
+        PokeSerivesProvider.shared.getAllPokemon { response, error in
+            (error == nil) ?
+            self.presenter?.responseGetPokesFromInteractor(with: response?.pokemon_entries ?? []) :
+            self.presenter?.errorToGetPokemon(with: [])
+        }
+    }
 
 }
+
 

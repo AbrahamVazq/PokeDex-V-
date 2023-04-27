@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3417D12629F889D60017E6B6 /* mainAllPokemonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3417D12529F889D60017E6B6 /* mainAllPokemonViewController.xib */; };
 		34D82708299AD5C1007CF379 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D82702299AD5C0007CF379 /* Language.swift */; };
 		34D82709299AD5C1007CF379 /* Pokemon_species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D82703299AD5C0007CF379 /* Pokemon_species.swift */; };
 		34D8270A299AD5C1007CF379 /* PokedexNational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D82704299AD5C0007CF379 /* PokedexNational.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3417D12529F889D60017E6B6 /* mainAllPokemonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainAllPokemonViewController.xib; sourceTree = "<group>"; };
 		34D82702299AD5C0007CF379 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		34D82703299AD5C0007CF379 /* Pokemon_species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon_species.swift; sourceTree = "<group>"; };
 		34D82704299AD5C0007CF379 /* PokedexNational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexNational.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				34E4737829F7779D004FAF20 /* mainAllPokemonProtocols.swift */,
 				34E4737629F7779D004FAF20 /* mainAllPokemonRouter.swift */,
 				34E4737729F7779D004FAF20 /* mainAllPokemonViewController.swift */,
+				3417D12529F889D60017E6B6 /* mainAllPokemonViewController.xib */,
 			);
 			path = MainAllPokemon;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43CD44C299AC92E00E1F298 /* LaunchScreen.storyboard in Resources */,
+				3417D12629F889D60017E6B6 /* mainAllPokemonViewController.xib in Resources */,
 				34F84538299AE40300D09061 /* SimpleTableViewCell.xib in Resources */,
 				A43CD449299AC92E00E1F298 /* Assets.xcassets in Resources */,
 				A43CD447299AC92700E1F298 /* Main.storyboard in Resources */,
