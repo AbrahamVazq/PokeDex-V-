@@ -74,6 +74,7 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
+    
     func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
     func errorToGetPokemon(with entries: [Pokemon_entries])
 }
@@ -93,6 +94,9 @@ protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> VIEW
 protocol mainAllPokemon_PresenterToViewProtocol: AnyObject {
     var presenter: mainAllPokemon_ViewToPresenterProtocol? { get set }
+    
+    func updateView(with entries: [Pokemon_entries])
+    func updateViewError(with entries: [Pokemon_entries])
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

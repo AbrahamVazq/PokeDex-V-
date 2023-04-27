@@ -20,7 +20,7 @@ final class PokeSerivesProvider {
     func getAllPokemon(withHandler: @escaping blkGetAllPokemon){
         let url = urlAllPokemon
         AF.request(url, method: .get).validate(statusCode: okStatus).responseDecodable(of: PokedexNational.self) { response in
-            print(response)
+//            print(response)
             switch response.result {
             case .success(let value):
                 withHandler(value, nil)

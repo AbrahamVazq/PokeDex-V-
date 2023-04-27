@@ -26,7 +26,7 @@ extension mainAllPokemonPresenter: mainAllPokemon_InteractorToPresenterProtocol 
     }
     
     func responseGetPokesFromInteractor(with entries: [Pokemon_entries]) {
-        print(entries)
+        view?.updateView(with: entries)
     }
     
 
