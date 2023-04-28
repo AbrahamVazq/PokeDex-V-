@@ -1,9 +1,6 @@
-//
 //  mainAllPokemonViewController+Delegates.swift
 //  PokeDex(V)
-//
 //  Created by Abraham Vazquez on 27/04/23.
-//
 
 import UIKit
 
@@ -17,12 +14,9 @@ extension mainAllPokemonViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return UITableViewCell()
-        let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath) as? SimpleTableViewCell ?? SimpleTableViewCell()
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier,
+                                                 for: indexPath) as? SimpleTableViewCell ?? SimpleTableViewCell()
         cell.lblTitle.text = allPokemon[indexPath.row].pokemon_species?.name
         return cell
     }
-    
-    
 }
