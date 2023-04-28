@@ -6,7 +6,16 @@
 import UIKit
 
 class mainAllPokemonViewController: UIViewController {
-
+    //MARK: - O U T L E T S
+    @IBOutlet weak var tblAllPokemon: UITableView!{
+        didSet{
+            self.tblAllPokemon.delegate = self
+            self.tblAllPokemon.dataSource = self
+            self.tblAllPokemon.register(SimpleTableViewCell.nib, forCellReuseIdentifier: SimpleTableViewCell.identifier)
+        }
+    }
+    
+    
     //MARK: - P R O P E R T I E S
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
     var allPokemon: [Pokemon_entries] = []
@@ -22,9 +31,8 @@ class mainAllPokemonViewController: UIViewController {
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
     
     func updateView(with entries: [Pokemon_entries]) {
-        print("Esto me llego desde el presenter: \(entries)")
         self.allPokemon = entries
-        print("Estos son todos los pokes!! :\(allPokemon)")
+        self.tblAllPokemon.reloadData()
     }
     
     func updateViewError(with entries: [Pokemon_entries]) {

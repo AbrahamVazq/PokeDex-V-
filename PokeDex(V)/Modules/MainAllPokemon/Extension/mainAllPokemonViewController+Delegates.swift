@@ -13,11 +13,15 @@ extension mainAllPokemonViewController: UITableViewDelegate {
 
 extension mainAllPokemonViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return allPokemon.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+//        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath) as? SimpleTableViewCell ?? SimpleTableViewCell()
+        
+        cell.lblTitle.text = allPokemon[indexPath.row].pokemon_species?.name
+        return cell
     }
     
     

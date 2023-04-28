@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainAllPokemonViewController" customModule="PokeDex_V_" customModuleProvider="target">
             <connections>
+                <outlet property="tblAllPokemon" destination="aNg-EM-2dg" id="8j4-E7-sYH"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ghs-se-Y0Z"/>
             </connections>
         </placeholder>
