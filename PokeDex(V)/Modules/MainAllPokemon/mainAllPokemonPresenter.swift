@@ -13,6 +13,7 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
     
     func viewDidLoad() {
         interactor?.getAllPokemon()
+        
     }
 
     

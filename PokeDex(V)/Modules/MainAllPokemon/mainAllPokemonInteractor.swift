@@ -17,6 +17,10 @@ class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
             self.presenter?.errorToGetPokemon(with: [])
         }
     }
+    
+    func getFirstSprite(){
+        
+    }
 
 }
 
