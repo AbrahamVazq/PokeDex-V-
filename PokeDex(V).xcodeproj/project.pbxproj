@@ -24,6 +24,8 @@
 		34F84537299AE40300D09061 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F84535299AE40300D09061 /* SimpleTableViewCell.swift */; };
 		34F84538299AE40300D09061 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F84536299AE40300D09061 /* SimpleTableViewCell.xib */; };
 		34F8453B299AE53000D09061 /* PokeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8453A299AE53000D09061 /* PokeExtension.swift */; };
+		A42498982A062582004D2923 /* MainSpriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42498962A062582004D2923 /* MainSpriteCollectionViewCell.swift */; };
+		A42498992A062582004D2923 /* MainSpriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42498972A062582004D2923 /* MainSpriteCollectionViewCell.xib */; };
 		A4298C5929FB1D5200B21301 /* mainAllPokemonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4298C5829FB1D5200B21301 /* mainAllPokemonViewController.xib */; };
 		A43CD440299AC92700E1F298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CD43F299AC92700E1F298 /* AppDelegate.swift */; };
 		A43CD442299AC92700E1F298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CD441299AC92700E1F298 /* SceneDelegate.swift */; };
@@ -53,6 +55,8 @@
 		34F84535299AE40300D09061 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
 		34F84536299AE40300D09061 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 		34F8453A299AE53000D09061 /* PokeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeExtension.swift; sourceTree = "<group>"; };
+		A42498962A062582004D2923 /* MainSpriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		A42498972A062582004D2923 /* MainSpriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSpriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4298C5829FB1D5200B21301 /* mainAllPokemonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainAllPokemonViewController.xib; sourceTree = "<group>"; };
 		A43CD43C299AC92700E1F298 /* PokeDex(V).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokeDex(V).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43CD43F299AC92700E1F298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		34F84534299AE3D100D09061 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A42498952A062557004D2923 /* MainSpriteCVC */,
 				34E4738029F7780A004FAF20 /* SimpleTableViewCell */,
 			);
 			path = View;
@@ -140,6 +145,15 @@
 				34F8453A299AE53000D09061 /* PokeExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A42498952A062557004D2923 /* MainSpriteCVC */ = {
+			isa = PBXGroup;
+			children = (
+				A42498962A062582004D2923 /* MainSpriteCollectionViewCell.swift */,
+				A42498972A062582004D2923 /* MainSpriteCollectionViewCell.xib */,
+			);
+			path = MainSpriteCVC;
 			sourceTree = "<group>";
 		};
 		A43CD433299AC92700E1F298 = {
@@ -272,6 +286,7 @@
 			files = (
 				A43CD44C299AC92E00E1F298 /* LaunchScreen.storyboard in Resources */,
 				A4298C5929FB1D5200B21301 /* mainAllPokemonViewController.xib in Resources */,
+				A42498992A062582004D2923 /* MainSpriteCollectionViewCell.xib in Resources */,
 				34F84538299AE40300D09061 /* SimpleTableViewCell.xib in Resources */,
 				A43CD449299AC92E00E1F298 /* Assets.xcassets in Resources */,
 				A43CD447299AC92700E1F298 /* Main.storyboard in Resources */,
@@ -290,6 +305,7 @@
 				A43CD444299AC92700E1F298 /* ViewController.swift in Sources */,
 				34D8270B299AD5C1007CF379 /* Pokemon_entries.swift in Sources */,
 				34D82708299AD5C1007CF379 /* Language.swift in Sources */,
+				A42498982A062582004D2923 /* MainSpriteCollectionViewCell.swift in Sources */,
 				34D8270D299AD5C1007CF379 /* Names.swift in Sources */,
 				34D8270A299AD5C1007CF379 /* PokedexNational.swift in Sources */,
 				34D8270C299AD5C1007CF379 /* Descriptions.swift in Sources */,
