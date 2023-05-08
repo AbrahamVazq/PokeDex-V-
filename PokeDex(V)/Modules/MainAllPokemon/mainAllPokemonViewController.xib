@@ -11,7 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainAllPokemonViewController" customModule="PokeDex_V_" customModuleProvider="target">
             <connections>
+                <outlet property="cvSprites" destination="uWf-gi-C16" id="hHI-l9-wAI"/>
+                <outlet property="lblNamePokemon" destination="eRE-pB-hkd" id="rMC-dz-GG7"/>
+                <outlet property="lblNoPokemon" destination="fXb-Bd-6Wo" id="2Tj-3I-HiO"/>
                 <outlet property="tblAllPokemon" destination="aNg-EM-2dg" id="8j4-E7-sYH"/>
+                <outlet property="txtVDescription" destination="EHT-b1-xft" id="GNw-ti-aEf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ghs-se-Y0Z"/>
             </connections>
         </placeholder>
@@ -23,13 +27,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-0c-Pcc">
                     <rect key="frame" x="0.0" y="59" width="393" height="250"/>
                     <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-gi-C16">
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-gi-C16">
                             <rect key="frame" x="8" y="8" width="130" height="234"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="130" id="F42-Cu-SqH"/>
                             </constraints>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r78-uL-heT">
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r78-uL-heT">
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>

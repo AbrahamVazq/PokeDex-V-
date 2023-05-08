@@ -11,6 +11,11 @@ public extension UITableViewCell {
     class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
 }
 
+//MARK: - UI · C O L L E C T I O N · V I E W · C E L L
+public extension UICollectionViewCell {
+    class var identifier: String { return String(describing: self) }
+    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
+}
 
 extension UIView {
     @IBInspectable
