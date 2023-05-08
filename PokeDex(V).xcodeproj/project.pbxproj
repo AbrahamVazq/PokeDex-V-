@@ -81,6 +81,10 @@
 		A47069E42A087C8E007E1E49 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B62A087C8D007E1E49 /* Abilities.swift */; };
 		A47069E52A087C8E007E1E49 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B72A087C8D007E1E49 /* Generation-v.swift */; };
 		A47069E62A087C8E007E1E49 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B82A087C8D007E1E49 /* Dream_world.swift */; };
+		A485D36B2A099C5A00766692 /* Evolution3StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D36A2A099C5A00766692 /* Evolution3StepsView.swift */; };
+		A485D36E2A099C7B00766692 /* Evolution3StepsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */; };
+		A485D3712A099D2600766692 /* Evolution2StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D3702A099D2600766692 /* Evolution2StepsView.swift */; };
+		A485D3732A099D4300766692 /* Evolution2StepsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A485D3722A099D4300766692 /* Evolution2StepsView.xib */; };
 		A48E8E9429FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +164,10 @@
 		A47069B62A087C8D007E1E49 /* Abilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		A47069B72A087C8D007E1E49 /* Generation-v.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-v.swift"; sourceTree = "<group>"; };
 		A47069B82A087C8D007E1E49 /* Dream_world.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream_world.swift; sourceTree = "<group>"; };
+		A485D36A2A099C5A00766692 /* Evolution3StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution3StepsView.swift; sourceTree = "<group>"; };
+		A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Evolution3StepsView.xib; sourceTree = "<group>"; };
+		A485D3702A099D2600766692 /* Evolution2StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution2StepsView.swift; sourceTree = "<group>"; };
+		A485D3722A099D4300766692 /* Evolution2StepsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Evolution2StepsView.xib; sourceTree = "<group>"; };
 		A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mainAllPokemonViewController+Delegates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +235,8 @@
 		34F84534299AE3D100D09061 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A485D36F2A099D0A00766692 /* Evolution2StepsView */,
+				A485D36C2A099C6200766692 /* Evolution3StepsView */,
 				A42498952A062557004D2923 /* MainSpriteCVC */,
 				34E4738029F7780A004FAF20 /* SimpleTableViewCell */,
 			);
@@ -300,6 +310,24 @@
 				A496249D2A06467900C08012 /* AllPokemon */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A485D36C2A099C6200766692 /* Evolution3StepsView */ = {
+			isa = PBXGroup;
+			children = (
+				A485D36A2A099C5A00766692 /* Evolution3StepsView.swift */,
+				A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */,
+			);
+			path = Evolution3StepsView;
+			sourceTree = "<group>";
+		};
+		A485D36F2A099D0A00766692 /* Evolution2StepsView */ = {
+			isa = PBXGroup;
+			children = (
+				A485D3702A099D2600766692 /* Evolution2StepsView.swift */,
+				A485D3722A099D4300766692 /* Evolution2StepsView.xib */,
+			);
+			path = Evolution2StepsView;
 			sourceTree = "<group>";
 		};
 		A48E8E9229FB380C00F97996 /* Extension */ = {
@@ -442,10 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43CD44C299AC92E00E1F298 /* LaunchScreen.storyboard in Resources */,
+				A485D3732A099D4300766692 /* Evolution2StepsView.xib in Resources */,
 				A4298C5929FB1D5200B21301 /* mainAllPokemonViewController.xib in Resources */,
 				A42498992A062582004D2923 /* MainSpriteCollectionViewCell.xib in Resources */,
 				34F84538299AE40300D09061 /* SimpleTableViewCell.xib in Resources */,
 				A43CD449299AC92E00E1F298 /* Assets.xcassets in Resources */,
+				A485D36E2A099C7B00766692 /* Evolution3StepsView.xib in Resources */,
 				A43CD447299AC92700E1F298 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A47069CD2A087C8D007E1E49 /* Generation-vii.swift in Sources */,
+				A485D3712A099D2600766692 /* Evolution2StepsView.swift in Sources */,
 				A47069D52A087C8D007E1E49 /* Omegaruby-alphasapphire.swift in Sources */,
 				A47069D82A087C8E007E1E49 /* Crystal.swift in Sources */,
 				34E4737D29F7779E004FAF20 /* mainAllPokemonProtocols.swift in Sources */,
@@ -485,6 +516,7 @@
 				A47069E12A087C8E007E1E49 /* Types.swift in Sources */,
 				A47069BA2A087C8D007E1E49 /* Moves.swift in Sources */,
 				A47069C32A087C8D007E1E49 /* Emerald.swift in Sources */,
+				A485D36B2A099C5A00766692 /* Evolution3StepsView.swift in Sources */,
 				34D8270A299AD5C1007CF379 /* PokedexNational.swift in Sources */,
 				A47069C82A087C8D007E1E49 /* Icons.swift in Sources */,
 				A47069DA2A087C8E007E1E49 /* Ultra-sun-ultra-moon.swift in Sources */,
