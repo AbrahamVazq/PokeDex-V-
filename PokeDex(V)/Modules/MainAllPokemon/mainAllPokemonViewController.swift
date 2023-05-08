@@ -36,7 +36,7 @@ class mainAllPokemonViewController: UIViewController {
     
     func updateMainView(with pokemon: Pokemon){
         self.arrSprites = []
-        self.lblNamePokemon.text = pokemon.name
+        self.lblNamePokemon.text = pokemon.name?.capitalized
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
         self.setUpSprites(with: pokemon)
     }
