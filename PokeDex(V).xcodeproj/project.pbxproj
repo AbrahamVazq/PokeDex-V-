@@ -34,8 +34,54 @@
 		A43CD449299AC92E00E1F298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43CD448299AC92E00E1F298 /* Assets.xcassets */; };
 		A43CD44C299AC92E00E1F298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43CD44A299AC92E00E1F298 /* LaunchScreen.storyboard */; };
 		A43CD459299ACF4C00E1F298 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A43CD458299ACF4C00E1F298 /* Alamofire */; };
+		A470698A2A087C4A007E1E49 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069892A087C4A007E1E49 /* Pokemon.swift */; };
+		A47069B92A087C8D007E1E49 /* Red-blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698B2A087C88007E1E49 /* Red-blue.swift */; };
+		A47069BA2A087C8D007E1E49 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698C2A087C88007E1E49 /* Moves.swift */; };
+		A47069BB2A087C8D007E1E49 /* Silver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698D2A087C89007E1E49 /* Silver.swift */; };
+		A47069BC2A087C8D007E1E49 /* Generation-iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698E2A087C89007E1E49 /* Generation-iii.swift */; };
+		A47069BD2A087C8D007E1E49 /* Generation-vi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698F2A087C89007E1E49 /* Generation-vi.swift */; };
+		A47069BE2A087C8D007E1E49 /* Game_indices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069902A087C89007E1E49 /* Game_indices.swift */; };
+		A47069BF2A087C8D007E1E49 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069912A087C89007E1E49 /* Forms.swift */; };
+		A47069C02A087C8D007E1E49 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069922A087C89007E1E49 /* Stat.swift */; };
+		A47069C12A087C8D007E1E49 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069932A087C89007E1E49 /* Stats.swift */; };
+		A47069C22A087C8D007E1E49 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069942A087C89007E1E49 /* Ability.swift */; };
+		A47069C32A087C8D007E1E49 /* Emerald.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069952A087C89007E1E49 /* Emerald.swift */; };
+		A47069C42A087C8D007E1E49 /* Gold.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069962A087C8A007E1E49 /* Gold.swift */; };
+		A47069C52A087C8D007E1E49 /* Version_group_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069972A087C8A007E1E49 /* Version_group_details.swift */; };
+		A47069C62A087C8D007E1E49 /* Version_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069982A087C8A007E1E49 /* Version_group.swift */; };
+		A47069C72A087C8D007E1E49 /* Generation-i.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069992A087C8A007E1E49 /* Generation-i.swift */; };
+		A47069C82A087C8D007E1E49 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699A2A087C8A007E1E49 /* Icons.swift */; };
+		A47069C92A087C8D007E1E49 /* Generation-iv.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699B2A087C8A007E1E49 /* Generation-iv.swift */; };
+		A47069CA2A087C8D007E1E49 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699C2A087C8A007E1E49 /* Species.swift */; };
+		A47069CB2A087C8D007E1E49 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699D2A087C8A007E1E49 /* Type.swift */; };
+		A47069CC2A087C8D007E1E49 /* Yellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699E2A087C8A007E1E49 /* Yellow.swift */; };
+		A47069CD2A087C8D007E1E49 /* Generation-vii.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470699F2A087C8B007E1E49 /* Generation-vii.swift */; };
+		A47069CE2A087C8D007E1E49 /* Firered-leafgreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A02A087C8B007E1E49 /* Firered-leafgreen.swift */; };
+		A47069CF2A087C8D007E1E49 /* Generation-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A12A087C8B007E1E49 /* Generation-ii.swift */; };
+		A47069D02A087C8D007E1E49 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A22A087C8B007E1E49 /* Move.swift */; };
+		A47069D12A087C8D007E1E49 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A32A087C8B007E1E49 /* Other.swift */; };
+		A47069D22A087C8D007E1E49 /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A42A087C8B007E1E49 /* Animated.swift */; };
+		A47069D32A087C8D007E1E49 /* Move_learn_method.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A52A087C8B007E1E49 /* Move_learn_method.swift */; };
+		A47069D42A087C8D007E1E49 /* Platinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A62A087C8B007E1E49 /* Platinum.swift */; };
+		A47069D52A087C8D007E1E49 /* Omegaruby-alphasapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A72A087C8B007E1E49 /* Omegaruby-alphasapphire.swift */; };
+		A47069D62A087C8D007E1E49 /* Generation-viii.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A82A087C8C007E1E49 /* Generation-viii.swift */; };
+		A47069D72A087C8E007E1E49 /* Diamond-pearl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069A92A087C8C007E1E49 /* Diamond-pearl.swift */; };
+		A47069D82A087C8E007E1E49 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AA2A087C8C007E1E49 /* Crystal.swift */; };
+		A47069D92A087C8E007E1E49 /* Official-artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AB2A087C8C007E1E49 /* Official-artwork.swift */; };
+		A47069DA2A087C8E007E1E49 /* Ultra-sun-ultra-moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AC2A087C8C007E1E49 /* Ultra-sun-ultra-moon.swift */; };
+		A47069DB2A087C8E007E1E49 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AD2A087C8C007E1E49 /* Home.swift */; };
+		A47069DC2A087C8E007E1E49 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AE2A087C8C007E1E49 /* Sprites.swift */; };
+		A47069DD2A087C8E007E1E49 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069AF2A087C8C007E1E49 /* Version.swift */; };
+		A47069DE2A087C8E007E1E49 /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B02A087C8C007E1E49 /* Versions.swift */; };
+		A47069DF2A087C8E007E1E49 /* X-y.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B12A087C8D007E1E49 /* X-y.swift */; };
+		A47069E02A087C8E007E1E49 /* Ruby-sapphire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B22A087C8D007E1E49 /* Ruby-sapphire.swift */; };
+		A47069E12A087C8E007E1E49 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B32A087C8D007E1E49 /* Types.swift */; };
+		A47069E22A087C8E007E1E49 /* Heartgold-soulsilver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B42A087C8D007E1E49 /* Heartgold-soulsilver.swift */; };
+		A47069E32A087C8E007E1E49 /* Black-white.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B52A087C8D007E1E49 /* Black-white.swift */; };
+		A47069E42A087C8E007E1E49 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B62A087C8D007E1E49 /* Abilities.swift */; };
+		A47069E52A087C8E007E1E49 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B72A087C8D007E1E49 /* Generation-v.swift */; };
+		A47069E62A087C8E007E1E49 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B82A087C8D007E1E49 /* Dream_world.swift */; };
 		A48E8E9429FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */; };
-		A49624A02A06471A00C08012 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A496249F2A06471A00C08012 /* Sprites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +113,54 @@
 		A43CD448299AC92E00E1F298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43CD44B299AC92E00E1F298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43CD44D299AC92E00E1F298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47069892A087C4A007E1E49 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		A470698B2A087C88007E1E49 /* Red-blue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Red-blue.swift"; sourceTree = "<group>"; };
+		A470698C2A087C88007E1E49 /* Moves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
+		A470698D2A087C89007E1E49 /* Silver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Silver.swift; sourceTree = "<group>"; };
+		A470698E2A087C89007E1E49 /* Generation-iii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-iii.swift"; sourceTree = "<group>"; };
+		A470698F2A087C89007E1E49 /* Generation-vi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-vi.swift"; sourceTree = "<group>"; };
+		A47069902A087C89007E1E49 /* Game_indices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game_indices.swift; sourceTree = "<group>"; };
+		A47069912A087C89007E1E49 /* Forms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
+		A47069922A087C89007E1E49 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		A47069932A087C89007E1E49 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		A47069942A087C89007E1E49 /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		A47069952A087C89007E1E49 /* Emerald.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emerald.swift; sourceTree = "<group>"; };
+		A47069962A087C8A007E1E49 /* Gold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gold.swift; sourceTree = "<group>"; };
+		A47069972A087C8A007E1E49 /* Version_group_details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version_group_details.swift; sourceTree = "<group>"; };
+		A47069982A087C8A007E1E49 /* Version_group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version_group.swift; sourceTree = "<group>"; };
+		A47069992A087C8A007E1E49 /* Generation-i.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-i.swift"; sourceTree = "<group>"; };
+		A470699A2A087C8A007E1E49 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		A470699B2A087C8A007E1E49 /* Generation-iv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-iv.swift"; sourceTree = "<group>"; };
+		A470699C2A087C8A007E1E49 /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		A470699D2A087C8A007E1E49 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		A470699E2A087C8A007E1E49 /* Yellow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow.swift; sourceTree = "<group>"; };
+		A470699F2A087C8B007E1E49 /* Generation-vii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-vii.swift"; sourceTree = "<group>"; };
+		A47069A02A087C8B007E1E49 /* Firered-leafgreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firered-leafgreen.swift"; sourceTree = "<group>"; };
+		A47069A12A087C8B007E1E49 /* Generation-ii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-ii.swift"; sourceTree = "<group>"; };
+		A47069A22A087C8B007E1E49 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		A47069A32A087C8B007E1E49 /* Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		A47069A42A087C8B007E1E49 /* Animated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animated.swift; sourceTree = "<group>"; };
+		A47069A52A087C8B007E1E49 /* Move_learn_method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move_learn_method.swift; sourceTree = "<group>"; };
+		A47069A62A087C8B007E1E49 /* Platinum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platinum.swift; sourceTree = "<group>"; };
+		A47069A72A087C8B007E1E49 /* Omegaruby-alphasapphire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Omegaruby-alphasapphire.swift"; sourceTree = "<group>"; };
+		A47069A82A087C8C007E1E49 /* Generation-viii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-viii.swift"; sourceTree = "<group>"; };
+		A47069A92A087C8C007E1E49 /* Diamond-pearl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diamond-pearl.swift"; sourceTree = "<group>"; };
+		A47069AA2A087C8C007E1E49 /* Crystal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crystal.swift; sourceTree = "<group>"; };
+		A47069AB2A087C8C007E1E49 /* Official-artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Official-artwork.swift"; sourceTree = "<group>"; };
+		A47069AC2A087C8C007E1E49 /* Ultra-sun-ultra-moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ultra-sun-ultra-moon.swift"; sourceTree = "<group>"; };
+		A47069AD2A087C8C007E1E49 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A47069AE2A087C8C007E1E49 /* Sprites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
+		A47069AF2A087C8C007E1E49 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		A47069B02A087C8C007E1E49 /* Versions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versions.swift; sourceTree = "<group>"; };
+		A47069B12A087C8D007E1E49 /* X-y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "X-y.swift"; sourceTree = "<group>"; };
+		A47069B22A087C8D007E1E49 /* Ruby-sapphire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ruby-sapphire.swift"; sourceTree = "<group>"; };
+		A47069B32A087C8D007E1E49 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A47069B42A087C8D007E1E49 /* Heartgold-soulsilver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Heartgold-soulsilver.swift"; sourceTree = "<group>"; };
+		A47069B52A087C8D007E1E49 /* Black-white.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Black-white.swift"; sourceTree = "<group>"; };
+		A47069B62A087C8D007E1E49 /* Abilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		A47069B72A087C8D007E1E49 /* Generation-v.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-v.swift"; sourceTree = "<group>"; };
+		A47069B82A087C8D007E1E49 /* Dream_world.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream_world.swift; sourceTree = "<group>"; };
 		A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mainAllPokemonViewController+Delegates.swift"; sourceTree = "<group>"; };
-		A496249F2A06471A00C08012 /* Sprites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +296,7 @@
 		A43CD456299ACC7600E1F298 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A496249E2A06468700C08012 /* SpritePokemon */,
+				A496249E2A06468700C08012 /* Pokemon */,
 				A496249D2A06467900C08012 /* AllPokemon */,
 			);
 			path = Model;
@@ -231,12 +323,58 @@
 			path = AllPokemon;
 			sourceTree = "<group>";
 		};
-		A496249E2A06468700C08012 /* SpritePokemon */ = {
+		A496249E2A06468700C08012 /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				A496249F2A06471A00C08012 /* Sprites.swift */,
+				A47069892A087C4A007E1E49 /* Pokemon.swift */,
+				A47069B62A087C8D007E1E49 /* Abilities.swift */,
+				A47069942A087C89007E1E49 /* Ability.swift */,
+				A47069A42A087C8B007E1E49 /* Animated.swift */,
+				A47069B52A087C8D007E1E49 /* Black-white.swift */,
+				A47069AA2A087C8C007E1E49 /* Crystal.swift */,
+				A47069A92A087C8C007E1E49 /* Diamond-pearl.swift */,
+				A47069B82A087C8D007E1E49 /* Dream_world.swift */,
+				A47069952A087C89007E1E49 /* Emerald.swift */,
+				A47069A02A087C8B007E1E49 /* Firered-leafgreen.swift */,
+				A47069912A087C89007E1E49 /* Forms.swift */,
+				A47069902A087C89007E1E49 /* Game_indices.swift */,
+				A47069992A087C8A007E1E49 /* Generation-i.swift */,
+				A47069A12A087C8B007E1E49 /* Generation-ii.swift */,
+				A470698E2A087C89007E1E49 /* Generation-iii.swift */,
+				A470699B2A087C8A007E1E49 /* Generation-iv.swift */,
+				A47069B72A087C8D007E1E49 /* Generation-v.swift */,
+				A470698F2A087C89007E1E49 /* Generation-vi.swift */,
+				A470699F2A087C8B007E1E49 /* Generation-vii.swift */,
+				A47069A82A087C8C007E1E49 /* Generation-viii.swift */,
+				A47069962A087C8A007E1E49 /* Gold.swift */,
+				A47069B42A087C8D007E1E49 /* Heartgold-soulsilver.swift */,
+				A47069AD2A087C8C007E1E49 /* Home.swift */,
+				A470699A2A087C8A007E1E49 /* Icons.swift */,
+				A47069A52A087C8B007E1E49 /* Move_learn_method.swift */,
+				A47069A22A087C8B007E1E49 /* Move.swift */,
+				A470698C2A087C88007E1E49 /* Moves.swift */,
+				A47069AB2A087C8C007E1E49 /* Official-artwork.swift */,
+				A47069A72A087C8B007E1E49 /* Omegaruby-alphasapphire.swift */,
+				A47069A32A087C8B007E1E49 /* Other.swift */,
+				A47069A62A087C8B007E1E49 /* Platinum.swift */,
+				A470698B2A087C88007E1E49 /* Red-blue.swift */,
+				A47069B22A087C8D007E1E49 /* Ruby-sapphire.swift */,
+				A470698D2A087C89007E1E49 /* Silver.swift */,
+				A470699C2A087C8A007E1E49 /* Species.swift */,
+				A47069AE2A087C8C007E1E49 /* Sprites.swift */,
+				A47069922A087C89007E1E49 /* Stat.swift */,
+				A47069932A087C89007E1E49 /* Stats.swift */,
+				A470699D2A087C8A007E1E49 /* Type.swift */,
+				A47069B32A087C8D007E1E49 /* Types.swift */,
+				A47069AC2A087C8C007E1E49 /* Ultra-sun-ultra-moon.swift */,
+				A47069972A087C8A007E1E49 /* Version_group_details.swift */,
+				A47069982A087C8A007E1E49 /* Version_group.swift */,
+				A47069AF2A087C8C007E1E49 /* Version.swift */,
+				A47069B02A087C8C007E1E49 /* Versions.swift */,
+				A47069B12A087C8D007E1E49 /* X-y.swift */,
+				A470699E2A087C8A007E1E49 /* Yellow.swift */,
 			);
-			path = SpritePokemon;
+			path = Pokemon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,27 +457,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47069CD2A087C8D007E1E49 /* Generation-vii.swift in Sources */,
+				A47069D52A087C8D007E1E49 /* Omegaruby-alphasapphire.swift in Sources */,
+				A47069D82A087C8E007E1E49 /* Crystal.swift in Sources */,
 				34E4737D29F7779E004FAF20 /* mainAllPokemonProtocols.swift in Sources */,
+				A47069BF2A087C8D007E1E49 /* Forms.swift in Sources */,
+				A47069BB2A087C8D007E1E49 /* Silver.swift in Sources */,
+				A47069C02A087C8D007E1E49 /* Stat.swift in Sources */,
+				A47069BD2A087C8D007E1E49 /* Generation-vi.swift in Sources */,
 				34F84533299ADBF600D09061 /* Namespace+Text.swift in Sources */,
+				A47069D32A087C8D007E1E49 /* Move_learn_method.swift in Sources */,
+				A47069D92A087C8E007E1E49 /* Official-artwork.swift in Sources */,
 				A43CD444299AC92700E1F298 /* ViewController.swift in Sources */,
+				A47069DC2A087C8E007E1E49 /* Sprites.swift in Sources */,
+				A47069CB2A087C8D007E1E49 /* Type.swift in Sources */,
 				34D8270B299AD5C1007CF379 /* Pokemon_entries.swift in Sources */,
+				A47069C62A087C8D007E1E49 /* Version_group.swift in Sources */,
+				A47069D72A087C8E007E1E49 /* Diamond-pearl.swift in Sources */,
+				A47069CF2A087C8D007E1E49 /* Generation-ii.swift in Sources */,
 				34D82708299AD5C1007CF379 /* Language.swift in Sources */,
 				A42498982A062582004D2923 /* MainSpriteCollectionViewCell.swift in Sources */,
+				A47069E22A087C8E007E1E49 /* Heartgold-soulsilver.swift in Sources */,
+				A47069B92A087C8D007E1E49 /* Red-blue.swift in Sources */,
+				A47069CC2A087C8D007E1E49 /* Yellow.swift in Sources */,
 				34D8270D299AD5C1007CF379 /* Names.swift in Sources */,
+				A47069C92A087C8D007E1E49 /* Generation-iv.swift in Sources */,
+				A47069E12A087C8E007E1E49 /* Types.swift in Sources */,
+				A47069BA2A087C8D007E1E49 /* Moves.swift in Sources */,
+				A47069C32A087C8D007E1E49 /* Emerald.swift in Sources */,
 				34D8270A299AD5C1007CF379 /* PokedexNational.swift in Sources */,
+				A47069C82A087C8D007E1E49 /* Icons.swift in Sources */,
+				A47069DA2A087C8E007E1E49 /* Ultra-sun-ultra-moon.swift in Sources */,
+				A47069DB2A087C8E007E1E49 /* Home.swift in Sources */,
+				A47069D02A087C8D007E1E49 /* Move.swift in Sources */,
+				A47069E02A087C8E007E1E49 /* Ruby-sapphire.swift in Sources */,
+				A47069DF2A087C8E007E1E49 /* X-y.swift in Sources */,
+				A47069C72A087C8D007E1E49 /* Generation-i.swift in Sources */,
+				A47069D12A087C8D007E1E49 /* Other.swift in Sources */,
+				A47069E52A087C8E007E1E49 /* Generation-v.swift in Sources */,
 				34D8270C299AD5C1007CF379 /* Descriptions.swift in Sources */,
 				34E4737B29F7779E004FAF20 /* mainAllPokemonRouter.swift in Sources */,
+				A47069E62A087C8E007E1E49 /* Dream_world.swift in Sources */,
 				34E4737C29F7779E004FAF20 /* mainAllPokemonViewController.swift in Sources */,
+				A47069D22A087C8D007E1E49 /* Animated.swift in Sources */,
+				A47069CE2A087C8D007E1E49 /* Firered-leafgreen.swift in Sources */,
+				A47069DD2A087C8E007E1E49 /* Version.swift in Sources */,
 				34E4737E29F7779E004FAF20 /* mainAllPokemonInteractor.swift in Sources */,
+				A47069C12A087C8D007E1E49 /* Stats.swift in Sources */,
 				34E4737F29F7779E004FAF20 /* mainAllPokemonPresenter.swift in Sources */,
+				A47069BE2A087C8D007E1E49 /* Game_indices.swift in Sources */,
+				A47069C52A087C8D007E1E49 /* Version_group_details.swift in Sources */,
 				A43CD440299AC92700E1F298 /* AppDelegate.swift in Sources */,
+				A47069D62A087C8D007E1E49 /* Generation-viii.swift in Sources */,
+				A47069CA2A087C8D007E1E49 /* Species.swift in Sources */,
+				A47069C22A087C8D007E1E49 /* Ability.swift in Sources */,
 				A43CD442299AC92700E1F298 /* SceneDelegate.swift in Sources */,
 				A48E8E9429FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift in Sources */,
+				A47069E32A087C8E007E1E49 /* Black-white.swift in Sources */,
+				A47069BC2A087C8D007E1E49 /* Generation-iii.swift in Sources */,
+				A47069E42A087C8E007E1E49 /* Abilities.swift in Sources */,
+				A47069C42A087C8D007E1E49 /* Gold.swift in Sources */,
 				34F84537299AE40300D09061 /* SimpleTableViewCell.swift in Sources */,
+				A470698A2A087C4A007E1E49 /* Pokemon.swift in Sources */,
+				A47069D42A087C8D007E1E49 /* Platinum.swift in Sources */,
 				34F84531299ADB9D00D09061 /* Namespace.swift in Sources */,
-				A49624A02A06471A00C08012 /* Sprites.swift in Sources */,
 				34E4735D29F7748B004FAF20 /* PokeServices.swift in Sources */,
 				34F8453B299AE53000D09061 /* PokeExtension.swift in Sources */,
+				A47069DE2A087C8E007E1E49 /* Versions.swift in Sources */,
 				34D82709299AD5C1007CF379 /* Pokemon_species.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

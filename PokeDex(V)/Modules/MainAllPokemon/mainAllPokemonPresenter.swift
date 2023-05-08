@@ -13,7 +13,7 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
     
     func viewDidLoad() {
         interactor?.getAllPokemon()
-        
+        interactor?.getPokemon(of: "1")
     }
 
     
@@ -22,6 +22,14 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension mainAllPokemonPresenter: mainAllPokemon_InteractorToPresenterProtocol {
+    func responseGetPokemonFromInteractor(with pokemon: Pokemon) {
+        view?.updatePokemon(with: pokemon)
+    }
+    
+    func errorToGetPokemon() {
+        print("Launch Error View")
+    }
+        
     func errorToGetPokemon(with entries: [Pokemon_entries]) {
         print(entries)
     }

@@ -25,11 +25,25 @@ class mainAllPokemonViewController: UIViewController {
         super.viewDidLoad()
         self.presenter?.viewDidLoad()
     }
+    
+    func updateMainView(with pokemon: Pokemon){
+        
+    }
+    
+    
 }
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
+    func updatePokemonError() {
+        print("ERROR")
+    }
     
+    func updatePokemon(with pokemon: Pokemon) {
+        print("\n\n\n Pokemon --->>>  \(pokemon) \n\n\n")
+        
+    }
+        
     func updateView(with entries: [Pokemon_entries]) {
         self.allPokemon = entries
         self.tblAllPokemon.reloadData()

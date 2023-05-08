@@ -52,7 +52,9 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     var presenter: mainAllPokemon_InteractorToPresenterProtocol? { get set }
     
     func getAllPokemon()
+    func getPokemon(of idPokemon: String)
 }
+
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -77,6 +79,9 @@ protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
     
     func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
     func errorToGetPokemon(with entries: [Pokemon_entries])
+    
+    func responseGetPokemonFromInteractor(with pokemon: Pokemon)
+    func errorToGetPokemon()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -97,6 +102,9 @@ protocol mainAllPokemon_PresenterToViewProtocol: AnyObject {
     
     func updateView(with entries: [Pokemon_entries])
     func updateViewError(with entries: [Pokemon_entries])
+    
+    func updatePokemon(with pokemon: Pokemon)
+    func updatePokemonError()
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
