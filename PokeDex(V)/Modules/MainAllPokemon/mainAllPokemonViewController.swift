@@ -35,6 +35,7 @@ class mainAllPokemonViewController: UIViewController {
     }
     
     func updateMainView(with pokemon: Pokemon){
+        self.arrSprites = []
         self.lblNamePokemon.text = pokemon.name
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
         self.setUpSprites(with: pokemon)
@@ -68,7 +69,6 @@ extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
     
     func updatePokemon(with pokemon: Pokemon) {
         self.updateMainView(with: pokemon)
-        
     }
         
     func updateView(with entries: [Pokemon_entries]) {

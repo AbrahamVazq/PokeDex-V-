@@ -18,16 +18,11 @@ class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
     }
     
     func getPokemon(of idPokemon: String){
-        PokeSerivesProvider.shared.getSprites { response, error in
+        PokeSerivesProvider.shared.getSprites(of: idPokemon) { response, error in
             if let response = response  {
                 if (error == nil) { self.presenter?.responseGetPokemonFromInteractor(with: response)}
                 else {self.presenter?.errorToGetPokemon()}
             }else { return }
-            
-           
         }
     }
-
 }
-
-

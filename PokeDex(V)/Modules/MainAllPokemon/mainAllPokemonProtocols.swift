@@ -27,6 +27,7 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
     
     func viewDidLoad()
     
+    func getPokemon(of idPokemon: String)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

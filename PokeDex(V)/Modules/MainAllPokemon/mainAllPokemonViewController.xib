@@ -25,10 +25,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-0c-Pcc">
-                    <rect key="frame" x="0.0" y="59" width="393" height="250"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="180"/>
                     <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-gi-C16">
-                            <rect key="frame" x="8" y="8" width="130" height="234"/>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uWf-gi-C16">
+                            <rect key="frame" x="8" y="8" width="130" height="164"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="130" id="F42-Cu-SqH"/>
@@ -47,23 +47,20 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(#000)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-Bd-6Wo">
-                            <rect key="frame" x="146" y="36.333333333333329" width="239" height="18"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="18" id="1Xa-dG-b8j"/>
-                            </constraints>
+                            <rect key="frame" x="146" y="36.333333333333329" width="239" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-P6-rMG">
-                            <rect key="frame" x="146" y="54.333333333333329" width="239" height="44"/>
+                            <rect key="frame" x="146" y="56.666666666666671" width="239" height="44"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="wuZ-Cg-s60"/>
                             </constraints>
                         </view>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-b1-xft">
-                            <rect key="frame" x="146" y="110.33333333333336" width="239" height="131.66666666666663"/>
+                            <rect key="frame" x="146" y="112.66666666666664" width="239" height="59.333333333333329"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                             <color key="textColor" systemColor="labelColor"/>
@@ -80,7 +77,7 @@
                         <constraint firstAttribute="trailing" secondItem="wrK-P6-rMG" secondAttribute="trailing" constant="8" id="JMV-ae-oj5"/>
                         <constraint firstAttribute="trailing" secondItem="fXb-Bd-6Wo" secondAttribute="trailing" constant="8" id="MIS-ka-occ"/>
                         <constraint firstAttribute="trailing" secondItem="eRE-pB-hkd" secondAttribute="trailing" constant="8" id="UP0-Ir-dPu"/>
-                        <constraint firstAttribute="height" constant="250" id="YOh-uX-Fhm"/>
+                        <constraint firstAttribute="height" constant="180" id="YOh-uX-Fhm"/>
                         <constraint firstItem="eRE-pB-hkd" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="bVR-Bo-1EE"/>
                         <constraint firstItem="wrK-P6-rMG" firstAttribute="top" secondItem="fXb-Bd-6Wo" secondAttribute="bottom" id="bpC-E9-Kzd"/>
                         <constraint firstItem="EHT-b1-xft" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="ePw-eA-b1I"/>
@@ -93,7 +90,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-EM-2dg">
-                    <rect key="frame" x="0.0" y="309" width="393" height="509"/>
+                    <rect key="frame" x="0.0" y="239" width="393" height="579"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>

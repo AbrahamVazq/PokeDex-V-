@@ -12,6 +12,7 @@ class MainSpriteCollectionViewCell: UICollectionViewCell {
     
     //MARK: - V A R I A B L E S
     private var downloadTask: URLSessionDownloadTask?
+    private var url: String = ""
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,10 +22,12 @@ class MainSpriteCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         downloadTask?.cancel()
         downloadTask = nil
+        url = ""
     }
     
     public func setSprite(withImage img: String){
-        self.downloadTask = imgSprite.loadImage(strURL: img)
+        self.url = img
+        self.downloadTask = imgSprite.loadImage(strURL: url)
     }
 
 }
