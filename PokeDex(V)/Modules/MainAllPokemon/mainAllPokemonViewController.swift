@@ -42,20 +42,13 @@ class mainAllPokemonViewController: UIViewController {
     }
     
     func setUpSprites(with pokemon: Pokemon) {
-        if pokemon.sprites?.front_default != nil {
-            arrSprites.append(pokemon.sprites?.front_default ?? "")
+        if pokemon.sprites?.other?.home?.front_default != nil {
+            arrSprites.append(pokemon.sprites?.other?.home?.front_default ?? "")
         }
-        if pokemon.sprites?.back_default != nil {
-            arrSprites.append(pokemon.sprites?.back_default ?? "")
+        if pokemon.sprites?.other?.home?.front_shiny != nil {
+            arrSprites.append(pokemon.sprites?.other?.home?.front_shiny ?? "")
         }
-        
-        if pokemon.sprites?.front_shiny != nil {
-            arrSprites.append(pokemon.sprites?.front_shiny ?? "")
-        }
-        
-        if pokemon.sprites?.back_shiny != nil {
-            arrSprites.append(pokemon.sprites?.back_shiny ?? "")
-        }
+    
         cvSprites.reloadData()
     }
     
