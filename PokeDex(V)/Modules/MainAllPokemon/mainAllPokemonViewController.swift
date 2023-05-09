@@ -13,6 +13,7 @@ class mainAllPokemonViewController: UIViewController {
     @IBOutlet weak var cvSprites: UICollectionView!
     @IBOutlet weak var tblAllPokemon: UITableView!
     @IBOutlet weak var vwEvolution: UIView!
+    @IBOutlet weak var vwInformation: UIView!
     
     //MARK: - P R O P E R T I E S
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
@@ -37,6 +38,7 @@ class mainAllPokemonViewController: UIViewController {
     
     func updateMainView(with pokemon: Pokemon){
         self.arrSprites = []
+        self.vwInformation.backgroundColor = .PRed
         self.lblNamePokemon.text = pokemon.name?.capitalized
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
         self.setUpSprites(with: pokemon)

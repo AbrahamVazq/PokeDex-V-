@@ -20,6 +20,7 @@ extension mainAllPokemonViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier,
                                                  for: indexPath) as? SimpleTableViewCell ?? SimpleTableViewCell()
+        cell.backgroundColor = .PBlue
         cell.lblTitle.text = allPokemon[indexPath.row].pokemon_species?.name
         return cell
     }

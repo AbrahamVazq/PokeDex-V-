@@ -85,6 +85,8 @@
 		A485D36E2A099C7B00766692 /* Evolution3StepsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */; };
 		A485D3712A099D2600766692 /* Evolution2StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D3702A099D2600766692 /* Evolution2StepsView.swift */; };
 		A485D3732A099D4300766692 /* Evolution2StepsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A485D3722A099D4300766692 /* Evolution2StepsView.xib */; };
+		A485D3762A0A25F100766692 /* PokeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D3752A0A25F100766692 /* PokeColor.swift */; };
+		A485D3782A0A26D900766692 /* PokeColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D3772A0A26D900766692 /* PokeColor+Extension.swift */; };
 		A48E8E9429FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +170,8 @@
 		A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Evolution3StepsView.xib; sourceTree = "<group>"; };
 		A485D3702A099D2600766692 /* Evolution2StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution2StepsView.swift; sourceTree = "<group>"; };
 		A485D3722A099D4300766692 /* Evolution2StepsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Evolution2StepsView.xib; sourceTree = "<group>"; };
+		A485D3752A0A25F100766692 /* PokeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeColor.swift; sourceTree = "<group>"; };
+		A485D3772A0A26D900766692 /* PokeColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokeColor+Extension.swift"; sourceTree = "<group>"; };
 		A48E8E9329FB383E00F97996 /* mainAllPokemonViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mainAllPokemonViewController+Delegates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +221,7 @@
 		34F8452C299AD90000D09061 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				A485D3742A0A25DD00766692 /* Color */,
 				34F84539299AE52100D09061 /* Extension */,
 				34F8452F299ADB7300D09061 /* Namespace */,
 			);
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				34F8453A299AE53000D09061 /* PokeExtension.swift */,
+				A485D3772A0A26D900766692 /* PokeColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -328,6 +334,14 @@
 				A485D3722A099D4300766692 /* Evolution2StepsView.xib */,
 			);
 			path = Evolution2StepsView;
+			sourceTree = "<group>";
+		};
+		A485D3742A0A25DD00766692 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A485D3752A0A25F100766692 /* PokeColor.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		A48E8E9229FB380C00F97996 /* Extension */ = {
@@ -513,11 +527,13 @@
 				A47069CC2A087C8D007E1E49 /* Yellow.swift in Sources */,
 				34D8270D299AD5C1007CF379 /* Names.swift in Sources */,
 				A47069C92A087C8D007E1E49 /* Generation-iv.swift in Sources */,
+				A485D3782A0A26D900766692 /* PokeColor+Extension.swift in Sources */,
 				A47069E12A087C8E007E1E49 /* Types.swift in Sources */,
 				A47069BA2A087C8D007E1E49 /* Moves.swift in Sources */,
 				A47069C32A087C8D007E1E49 /* Emerald.swift in Sources */,
 				A485D36B2A099C5A00766692 /* Evolution3StepsView.swift in Sources */,
 				34D8270A299AD5C1007CF379 /* PokedexNational.swift in Sources */,
+				A485D3762A0A25F100766692 /* PokeColor.swift in Sources */,
 				A47069C82A087C8D007E1E49 /* Icons.swift in Sources */,
 				A47069DA2A087C8E007E1E49 /* Ultra-sun-ultra-moon.swift in Sources */,
 				A47069DB2A087C8E007E1E49 /* Home.swift in Sources */,
