@@ -12,6 +12,7 @@ class mainAllPokemonViewController: UIViewController {
     @IBOutlet weak var txtVDescription: UITextView!
     @IBOutlet weak var cvSprites: UICollectionView!
     @IBOutlet weak var tblAllPokemon: UITableView!
+    @IBOutlet weak var vwEvolution: UIView!
     
     //MARK: - P R O P E R T I E S
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
@@ -39,6 +40,7 @@ class mainAllPokemonViewController: UIViewController {
         self.lblNamePokemon.text = pokemon.name?.capitalized
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
         self.setUpSprites(with: pokemon)
+        self.setEvolutionView()
     }
     
     func setUpSprites(with pokemon: Pokemon) {
@@ -48,8 +50,14 @@ class mainAllPokemonViewController: UIViewController {
         if pokemon.sprites?.other?.home?.front_shiny != nil {
             arrSprites.append(pokemon.sprites?.other?.home?.front_shiny ?? "")
         }
+        
+        
     
         cvSprites.reloadData()
+    }
+    
+    func setEvolutionView(){
+        self.vwEvolution.addSubview(Evolution3StepsView.instantiate(with: NSObject()))
     }
     
 }

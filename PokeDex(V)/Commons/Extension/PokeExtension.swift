@@ -7,17 +7,23 @@ import UIKit
 
 //MARK: - UI · T A B L E · V I E W · C E L L
 public extension UITableViewCell {
-    class var identifier: String { return String(describing: self) }
-    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
+//    class var identifier: String { return String(describing: self) }
+//    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
 }
 
 //MARK: - UI · C O L L E C T I O N · V I E W · C E L L
 public extension UICollectionViewCell {
-    class var identifier: String { return String(describing: self) }
-    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
+//    class var identifier: String { return String(describing: self) }
+//    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
 }
 
+//MARK: - UI · V I E W
 extension UIView {
+    
+    class var identifier: String { return String(describing: self) }
+    class var nib: UINib { return UINib(nibName: identifier, bundle: .main) }
+    
+    
     @IBInspectable
     var cornerRadius: CGFloat {
         get {  return layer.cornerRadius}
@@ -35,6 +41,7 @@ extension UIView {
     }
 }
 
+//MARK: - UI · I M A G E · V I E W
 extension UIImageView {
     
     func loadImage(strURL: String?) -> URLSessionDownloadTask? {
@@ -53,3 +60,7 @@ extension UIImageView {
     }
     
 }
+
+//public extension Bundle {
+//    static let pokeBundle: Bundle = Bundle.init(for: AppDelegate.self)
+//}

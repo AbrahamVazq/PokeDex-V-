@@ -17,6 +17,7 @@
                 <outlet property="tblAllPokemon" destination="aNg-EM-2dg" id="8j4-E7-sYH"/>
                 <outlet property="txtVDescription" destination="EHT-b1-xft" id="GNw-ti-aEf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ghs-se-Y0Z"/>
+                <outlet property="vwEvolution" destination="Hx0-IT-vTd" id="al2-wC-Cvb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
