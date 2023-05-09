@@ -40,7 +40,9 @@ class mainAllPokemonViewController: UIViewController {
         self.arrSprites = []
         self.vwInformation.backgroundColor = .PRed
         self.lblNamePokemon.text = pokemon.name?.capitalized
+        self.lblNamePokemon.textColor = .PYellow
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
+        self.lblNoPokemon.textColor = .PYellow
         self.setUpSprites(with: pokemon)
         self.setEvolutionView()
     }
