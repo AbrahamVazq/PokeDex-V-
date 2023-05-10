@@ -14,15 +14,28 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
     func viewDidLoad() {
         interactor?.getAllPokemon()
         interactor?.getPokemon(of: "1")
+        
     }
     
     func getPokemon(of idPokemon: String) {
         interactor?.getPokemon(of: idPokemon)
     }
+    
+    func getEvolution(of idPokemon:String) {
+        
+    }
 }
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension mainAllPokemonPresenter: mainAllPokemon_InteractorToPresenterProtocol {
+    func responseGetPokeEvolutionFromInteractor(with pokeEvol: PokeEvolution) {
+        view?.updatePokeEvolution(with: pokeEvol)
+    }
+    
+    func errorToGetEvolution() {
+        print("Launch Error View")
+    }
+    
     func responseGetPokemonFromInteractor(with pokemon: Pokemon) {
         view?.updatePokemon(with: pokemon)
     }

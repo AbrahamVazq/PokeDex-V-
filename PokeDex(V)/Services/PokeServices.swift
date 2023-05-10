@@ -5,15 +5,15 @@
 import Foundation
 import Alamofire
 
-final class PokeSerivesProvider {
+final class PokeServicesProvider {
     
     //MARK: - B L O C K
     public typealias blkGetAllPokemon  = (PokedexNational?, AFError?) -> Void
     public typealias blkGetFirstSprite = (Pokemon?, AFError?) -> Void
-    
+    public typealias blkGetChainEvolution = (PokeEvolution?, AFError?) -> Void
     
     //MARK: - V A R I A B L E S
-    static let shared = PokeSerivesProvider()
+    static let shared = PokeServicesProvider()
     
     private let urlAllPokemon = "https://pokeapi.co/api/v2/pokedex/1/"
     private let okStatus = 200 ... 299
@@ -34,6 +34,18 @@ final class PokeSerivesProvider {
     func getSprites(of idPokemon:String = "1", withHandler: @escaping blkGetFirstSprite){
         let urlForSprites:String = "https://pokeapi.co/api/v2/pokemon/\(idPokemon)"
         AF.request(urlForSprites,method: .get).validate(statusCode: okStatus).responseDecodable(of: Pokemon.self) { response in
+            switch response.result {
+            case .success(let value):
+                withHandler(value, nil)
+            case .failure(let error):
+                response.response?.statusCode == 200 ? withHandler(nil,nil) : withHandler(nil,error)
+            }
+        }
+    }
+    
+    func getChainEvolution(of idPokemon:String = "1", withHandler: @escaping blkGetChainEvolution) {
+        let urlForEvolution:String = "https://pokeapi.co/api/v2/evolution-chain/\(idPokemon)/"
+        AF.request(urlForEvolution, method: .get).validate(statusCode: okStatus).responseDecodable(of: PokeEvolution.self) { response in
             switch response.result {
             case .success(let value):
                 withHandler(value, nil)

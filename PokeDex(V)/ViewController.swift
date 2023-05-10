@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     
     func getAllPokemon(){
-        PokeSerivesProvider.shared.getAllPokemon { response, error in
+        PokeServicesProvider.shared.getAllPokemon { response, error in
             self.pokeEntires = response?.pokemon_entries ?? []
             print("\n\n\n\n\n\n\n\n pokeEntries -> \(self.pokeEntires) \n\n\n\n\n\n\n\n")
             self.tablePokemon.reloadData()

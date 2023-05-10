@@ -81,6 +81,11 @@
 		A47069E42A087C8E007E1E49 /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B62A087C8D007E1E49 /* Abilities.swift */; };
 		A47069E52A087C8E007E1E49 /* Generation-v.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B72A087C8D007E1E49 /* Generation-v.swift */; };
 		A47069E62A087C8E007E1E49 /* Dream_world.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069B82A087C8D007E1E49 /* Dream_world.swift */; };
+		A47216612A0C00F0000144A4 /* PokeEvolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47216602A0C00F0000144A4 /* PokeEvolution.swift */; };
+		A47216672A0C016A000144A4 /* Evolution_details.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47216622A0C0169000144A4 /* Evolution_details.swift */; };
+		A47216692A0C016A000144A4 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47216642A0C0169000144A4 /* Trigger.swift */; };
+		A472166A2A0C016A000144A4 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47216652A0C0169000144A4 /* Chain.swift */; };
+		A472166B2A0C016A000144A4 /* Evolves_to.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47216662A0C016A000144A4 /* Evolves_to.swift */; };
 		A485D36B2A099C5A00766692 /* Evolution3StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D36A2A099C5A00766692 /* Evolution3StepsView.swift */; };
 		A485D36E2A099C7B00766692 /* Evolution3StepsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */; };
 		A485D3712A099D2600766692 /* Evolution2StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D3702A099D2600766692 /* Evolution2StepsView.swift */; };
@@ -166,6 +171,11 @@
 		A47069B62A087C8D007E1E49 /* Abilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		A47069B72A087C8D007E1E49 /* Generation-v.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Generation-v.swift"; sourceTree = "<group>"; };
 		A47069B82A087C8D007E1E49 /* Dream_world.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream_world.swift; sourceTree = "<group>"; };
+		A47216602A0C00F0000144A4 /* PokeEvolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeEvolution.swift; sourceTree = "<group>"; };
+		A47216622A0C0169000144A4 /* Evolution_details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evolution_details.swift; sourceTree = "<group>"; };
+		A47216642A0C0169000144A4 /* Trigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
+		A47216652A0C0169000144A4 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		A47216662A0C016A000144A4 /* Evolves_to.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evolves_to.swift; sourceTree = "<group>"; };
 		A485D36A2A099C5A00766692 /* Evolution3StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution3StepsView.swift; sourceTree = "<group>"; };
 		A485D36D2A099C7B00766692 /* Evolution3StepsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Evolution3StepsView.xib; sourceTree = "<group>"; };
 		A485D3702A099D2600766692 /* Evolution2StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution2StepsView.swift; sourceTree = "<group>"; };
@@ -312,10 +322,23 @@
 		A43CD456299ACC7600E1F298 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A472165F2A0C0075000144A4 /* Evolution */,
 				A496249E2A06468700C08012 /* Pokemon */,
 				A496249D2A06467900C08012 /* AllPokemon */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A472165F2A0C0075000144A4 /* Evolution */ = {
+			isa = PBXGroup;
+			children = (
+				A47216602A0C00F0000144A4 /* PokeEvolution.swift */,
+				A47216652A0C0169000144A4 /* Chain.swift */,
+				A47216622A0C0169000144A4 /* Evolution_details.swift */,
+				A47216662A0C016A000144A4 /* Evolves_to.swift */,
+				A47216642A0C0169000144A4 /* Trigger.swift */,
+			);
+			path = Evolution;
 			sourceTree = "<group>";
 		};
 		A485D36C2A099C6200766692 /* Evolution3StepsView */ = {
@@ -520,6 +543,7 @@
 				A47069C62A087C8D007E1E49 /* Version_group.swift in Sources */,
 				A47069D72A087C8E007E1E49 /* Diamond-pearl.swift in Sources */,
 				A47069CF2A087C8D007E1E49 /* Generation-ii.swift in Sources */,
+				A47216612A0C00F0000144A4 /* PokeEvolution.swift in Sources */,
 				34D82708299AD5C1007CF379 /* Language.swift in Sources */,
 				A42498982A062582004D2923 /* MainSpriteCollectionViewCell.swift in Sources */,
 				A47069E22A087C8E007E1E49 /* Heartgold-soulsilver.swift in Sources */,
@@ -543,6 +567,7 @@
 				A47069C72A087C8D007E1E49 /* Generation-i.swift in Sources */,
 				A47069D12A087C8D007E1E49 /* Other.swift in Sources */,
 				A47069E52A087C8E007E1E49 /* Generation-v.swift in Sources */,
+				A472166B2A0C016A000144A4 /* Evolves_to.swift in Sources */,
 				34D8270C299AD5C1007CF379 /* Descriptions.swift in Sources */,
 				34E4737B29F7779E004FAF20 /* mainAllPokemonRouter.swift in Sources */,
 				A47069E62A087C8E007E1E49 /* Dream_world.swift in Sources */,
@@ -556,7 +581,9 @@
 				A47069BE2A087C8D007E1E49 /* Game_indices.swift in Sources */,
 				A47069C52A087C8D007E1E49 /* Version_group_details.swift in Sources */,
 				A43CD440299AC92700E1F298 /* AppDelegate.swift in Sources */,
+				A47216692A0C016A000144A4 /* Trigger.swift in Sources */,
 				A47069D62A087C8D007E1E49 /* Generation-viii.swift in Sources */,
+				A472166A2A0C016A000144A4 /* Chain.swift in Sources */,
 				A47069CA2A087C8D007E1E49 /* Species.swift in Sources */,
 				A47069C22A087C8D007E1E49 /* Ability.swift in Sources */,
 				A43CD442299AC92700E1F298 /* SceneDelegate.swift in Sources */,
@@ -566,6 +593,7 @@
 				A47069E42A087C8E007E1E49 /* Abilities.swift in Sources */,
 				A47069C42A087C8D007E1E49 /* Gold.swift in Sources */,
 				34F84537299AE40300D09061 /* SimpleTableViewCell.swift in Sources */,
+				A47216672A0C016A000144A4 /* Evolution_details.swift in Sources */,
 				A470698A2A087C4A007E1E49 /* Pokemon.swift in Sources */,
 				A47069D42A087C8D007E1E49 /* Platinum.swift in Sources */,
 				34F84531299ADB9D00D09061 /* Namespace.swift in Sources */,

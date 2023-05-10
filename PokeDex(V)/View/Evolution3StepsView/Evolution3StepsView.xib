@@ -24,7 +24,7 @@
                                 <constraint firstAttribute="width" constant="50" id="duc-8J-Z3n"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carat.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-eg-BtV">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="3rI-eg-BtV">
                             <rect key="frame" x="82" y="46" width="37" height="10"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -75,7 +75,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carat.png" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-h5-IFc">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-h5-IFc">
                             <rect key="frame" x="185" y="46" width="37" height="10"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -97,7 +97,6 @@
                         <constraint firstItem="co2-AZ-9WV" firstAttribute="centerX" secondItem="LKq-xH-mw7" secondAttribute="centerX" id="LkT-4D-PlO"/>
                         <constraint firstItem="uLE-cM-6dK" firstAttribute="centerY" secondItem="SbG-cI-lVb" secondAttribute="centerY" id="Lvd-KV-ohA"/>
                         <constraint firstItem="uLE-cM-6dK" firstAttribute="centerX" secondItem="86g-Z4-NF4" secondAttribute="centerX" id="MLu-hI-6Im"/>
-                        <constraint firstItem="LKq-xH-mw7" firstAttribute="leading" secondItem="Ytq-mk-6Jg" secondAttribute="trailing" constant="53" id="Obg-tJ-bXz"/>
                         <constraint firstItem="DEt-zb-j1r" firstAttribute="top" secondItem="fT1-U0-k9J" secondAttribute="top" constant="10" id="Piu-Bt-NlR"/>
                         <constraint firstItem="SbG-cI-lVb" firstAttribute="centerX" secondItem="Ytq-mk-6Jg" secondAttribute="centerX" id="PnR-au-M3w"/>
                         <constraint firstItem="86g-Z4-NF4" firstAttribute="centerY" secondItem="fT1-U0-k9J" secondAttribute="centerY" id="QEB-AV-gwg"/>
@@ -106,7 +105,6 @@
                         <constraint firstItem="LKq-xH-mw7" firstAttribute="centerY" secondItem="fT1-U0-k9J" secondAttribute="centerY" id="UrX-wd-Jeg"/>
                         <constraint firstItem="QuA-h5-IFc" firstAttribute="leading" secondItem="Ytq-mk-6Jg" secondAttribute="trailing" constant="8" id="V47-Ky-TLM"/>
                         <constraint firstAttribute="trailing" secondItem="LKq-xH-mw7" secondAttribute="trailing" constant="24" id="bwx-x4-3FZ"/>
-                        <constraint firstItem="Ytq-mk-6Jg" firstAttribute="leading" secondItem="86g-Z4-NF4" secondAttribute="trailing" constant="53" id="dY6-UR-iK5"/>
                         <constraint firstItem="SbG-cI-lVb" firstAttribute="centerY" secondItem="co2-AZ-9WV" secondAttribute="centerY" id="i9r-hM-4b1"/>
                         <constraint firstItem="MPJ-HN-dTg" firstAttribute="top" secondItem="fT1-U0-k9J" secondAttribute="top" constant="10" id="imG-8D-56t"/>
                         <constraint firstItem="LKq-xH-mw7" firstAttribute="leading" secondItem="QuA-h5-IFc" secondAttribute="trailing" constant="8" id="lIe-25-bLA"/>
@@ -140,7 +138,7 @@
         </view>
     </objects>
     <resources>
-        <image name="carat.png" width="16" height="28"/>
+        <image name="rightArrow" width="1280" height="640"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

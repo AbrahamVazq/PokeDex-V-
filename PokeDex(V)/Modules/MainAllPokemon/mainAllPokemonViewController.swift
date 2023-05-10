@@ -68,9 +68,10 @@ class mainAllPokemonViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
-    func updatePokemonError() {
-        print(" E R R O R ")
+    func updatePokeEvolution(with evol: PokeEvolution) {
+        print("\n\n\n evol --->>> \(evol) \n\n\n")
     }
+    
     
     func updatePokemon(with pokemon: Pokemon) {
         self.updateMainView(with: pokemon)
@@ -82,6 +83,14 @@ extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
     }
     
     func updateViewError(with entries: [Pokemon_entries]) {
+        print(" E R R O R ")
+    }
+    
+    func updatePokeEvolutionError() {
+        print(" E R R O R ")
+    }
+    
+    func updatePokemonError() {
         print(" E R R O R ")
     }
     
