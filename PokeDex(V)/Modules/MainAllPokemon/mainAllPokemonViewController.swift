@@ -19,6 +19,7 @@ class mainAllPokemonViewController: UIViewController {
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
     var allPokemon: [Pokemon_entries] = []
     var arrSprites: [String] = []
+    let bckImage: UIImage = UIImage(named: "backGroundPokemonShow") ?? UIImage()
 
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -30,9 +31,11 @@ class mainAllPokemonViewController: UIViewController {
     func setUpDelegates(){
         self.tblAllPokemon.delegate = self
         self.tblAllPokemon.dataSource = self
+        self.tblAllPokemon.separatorStyle = .none
         self.tblAllPokemon.register(SimpleTableViewCell.nib, forCellReuseIdentifier: SimpleTableViewCell.identifier)
         self.cvSprites.delegate = self
         self.cvSprites.dataSource = self
+        self.cvSprites.backgroundColor = UIColor(patternImage: bckImage)
         self.cvSprites.register(MainSpriteCollectionViewCell.nib, forCellWithReuseIdentifier: MainSpriteCollectionViewCell.identifier)
     }
     
@@ -55,13 +58,21 @@ class mainAllPokemonViewController: UIViewController {
             arrSprites.append(pokemon.sprites?.other?.home?.front_shiny ?? "")
         }
         
-        
-    
         cvSprites.reloadData()
     }
     
     func setEvolutionView(){
-        self.vwEvolution.addSubview(Evolution3StepsView.instantiate(with: NSObject()))
+        let evolutionView = Evolution3StepsView.instantiate(with: NSObject())
+        self.vwEvolution.addSubview(evolutionView)
+        
+        evolutionView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(
+            [evolutionView.leadingAnchor.constraint(equalTo: vwEvolution.leadingAnchor),
+             evolutionView.trailingAnchor.constraint(equalTo: vwEvolution.trailingAnchor),
+             evolutionView.topAnchor.constraint(equalTo: vwEvolution.topAnchor),
+             evolutionView.bottomAnchor.constraint(equalTo: vwEvolution.bottomAnchor),
+            ]
+        )
     }
     
 }

@@ -21,7 +21,6 @@ class Evolution3StepsView: UIView {
     class func instantiate(with obj: NSObject) -> Evolution3StepsView {
 
         if let nib = Bundle.main.loadNibNamed(Evolution3StepsView.identifier,  owner: self, options: nil)?[0] as? Evolution3StepsView {
-//            nib.frame.size.height = CGFloat(height )
             nib.lblFirstLevel.text = "00"
             nib.lblSecondLevel.text = "00"
             nib.imgFirstStep.image = UIImage(named: "")
