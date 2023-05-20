@@ -21,8 +21,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRi-4z-Y5C">
                         <rect key="frame" x="8" y="8" width="112" height="134"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jy7-qr-uhQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jy7-qr-uhQ">
                                 <rect key="frame" x="0.0" y="0.0" width="112" height="134"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,6 +37,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="DRi-4z-Y5C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="3Ok-pj-jsp"/>
                 <constraint firstItem="DRi-4z-Y5C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="KL9-ud-149"/>

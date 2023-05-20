@@ -12,12 +12,10 @@ class MainSpriteCollectionViewCell: UICollectionViewCell {
     //MARK: - V A R I A B L E S
     private var downloadTask: URLSessionDownloadTask?
     private var url: String = ""
-    let bckImage: UIImage = UIImage(named: "pokeballBlue") ?? UIImage()
-
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgSprite.backgroundColor = UIColor(patternImage: bckImage)
+        self.imgSprite.backgroundColor = .clear
     }
     
     override func prepareForReuse() {

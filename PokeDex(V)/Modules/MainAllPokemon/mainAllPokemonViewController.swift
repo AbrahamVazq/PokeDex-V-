@@ -19,7 +19,6 @@ class mainAllPokemonViewController: UIViewController {
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
     var allPokemon: [Pokemon_entries] = []
     var arrSprites: [String] = []
-    let bckImage: UIImage = UIImage(named: "backGroundPokemonShow") ?? UIImage()
 
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -35,7 +34,6 @@ class mainAllPokemonViewController: UIViewController {
         self.tblAllPokemon.register(SimpleTableViewCell.nib, forCellReuseIdentifier: SimpleTableViewCell.identifier)
         self.cvSprites.delegate = self
         self.cvSprites.dataSource = self
-        self.cvSprites.backgroundColor = UIColor(patternImage: bckImage)
         self.cvSprites.register(MainSpriteCollectionViewCell.nib, forCellWithReuseIdentifier: MainSpriteCollectionViewCell.identifier)
     }
     
