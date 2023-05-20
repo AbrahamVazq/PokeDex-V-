@@ -14,6 +14,8 @@
                 <outlet property="cvSprites" destination="uWf-gi-C16" id="hHI-l9-wAI"/>
                 <outlet property="lblNamePokemon" destination="eRE-pB-hkd" id="rMC-dz-GG7"/>
                 <outlet property="lblNoPokemon" destination="fXb-Bd-6Wo" id="2Tj-3I-HiO"/>
+                <outlet property="lblTypeOne" destination="mwl-Ja-7Gw" id="64i-qx-2UF"/>
+                <outlet property="lblTypeTwo" destination="UZs-0i-MS0" id="wkT-T0-epV"/>
                 <outlet property="tblAllPokemon" destination="aNg-EM-2dg" id="8j4-E7-sYH"/>
                 <outlet property="txtVDescription" destination="EHT-b1-xft" id="GNw-ti-aEf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ghs-se-Y0Z"/>
@@ -59,39 +61,48 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-P6-rMG">
-                            <rect key="frame" x="146" y="58" width="239" height="44"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="44" id="wuZ-Cg-s60"/>
-                            </constraints>
-                        </view>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-b1-xft">
-                            <rect key="frame" x="146" y="114" width="239" height="58"/>
+                            <rect key="frame" x="146" y="96" width="239" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                             <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Type 1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-Ja-7Gw">
+                            <rect key="frame" x="146" y="66" width="61.333333333333343" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="V8u-xJ-6Cu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Type 2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZs-0i-MS0">
+                            <rect key="frame" x="215.33333333333334" y="66" width="63.666666666666657" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="uWf-gi-C16" firstAttribute="leading" secondItem="ca5-0c-Pcc" secondAttribute="leading" constant="8" id="1gY-z9-Lym"/>
                         <constraint firstItem="uWf-gi-C16" firstAttribute="top" secondItem="ca5-0c-Pcc" secondAttribute="top" constant="8" id="3bA-1v-gpU"/>
                         <constraint firstAttribute="bottom" secondItem="EHT-b1-xft" secondAttribute="bottom" constant="8" id="3tZ-kM-voP"/>
-                        <constraint firstItem="EHT-b1-xft" firstAttribute="top" secondItem="wrK-P6-rMG" secondAttribute="bottom" constant="12" id="Ihs-7T-yUN"/>
-                        <constraint firstAttribute="trailing" secondItem="wrK-P6-rMG" secondAttribute="trailing" constant="8" id="JMV-ae-oj5"/>
                         <constraint firstAttribute="trailing" secondItem="fXb-Bd-6Wo" secondAttribute="trailing" constant="8" id="MIS-ka-occ"/>
+                        <constraint firstItem="UZs-0i-MS0" firstAttribute="top" secondItem="fXb-Bd-6Wo" secondAttribute="bottom" constant="8" symbolic="YES" id="SFp-9L-AEg"/>
+                        <constraint firstItem="mwl-Ja-7Gw" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="SWp-gH-eAL"/>
+                        <constraint firstItem="mwl-Ja-7Gw" firstAttribute="top" secondItem="fXb-Bd-6Wo" secondAttribute="bottom" constant="8" symbolic="YES" id="TCa-Hr-0Zo"/>
                         <constraint firstAttribute="trailing" secondItem="eRE-pB-hkd" secondAttribute="trailing" constant="8" id="UP0-Ir-dPu"/>
                         <constraint firstAttribute="height" constant="180" id="YOh-uX-Fhm"/>
                         <constraint firstItem="eRE-pB-hkd" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="bVR-Bo-1EE"/>
-                        <constraint firstItem="wrK-P6-rMG" firstAttribute="top" secondItem="fXb-Bd-6Wo" secondAttribute="bottom" id="bpC-E9-Kzd"/>
+                        <constraint firstItem="EHT-b1-xft" firstAttribute="top" secondItem="mwl-Ja-7Gw" secondAttribute="bottom" constant="8" id="e7H-oN-pta"/>
                         <constraint firstItem="EHT-b1-xft" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="ePw-eA-b1I"/>
                         <constraint firstAttribute="trailing" secondItem="EHT-b1-xft" secondAttribute="trailing" constant="8" id="hOB-bK-aP7"/>
                         <constraint firstAttribute="bottom" secondItem="uWf-gi-C16" secondAttribute="bottom" constant="8" id="hpx-e5-CAb"/>
                         <constraint firstItem="fXb-Bd-6Wo" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="iXM-gB-VXy"/>
+                        <constraint firstItem="UZs-0i-MS0" firstAttribute="leading" secondItem="mwl-Ja-7Gw" secondAttribute="trailing" constant="8" id="j8f-Yh-BAs"/>
                         <constraint firstItem="fXb-Bd-6Wo" firstAttribute="top" secondItem="eRE-pB-hkd" secondAttribute="bottom" constant="8" symbolic="YES" id="lQM-ZI-ycE"/>
-                        <constraint firstItem="wrK-P6-rMG" firstAttribute="leading" secondItem="uWf-gi-C16" secondAttribute="trailing" constant="8" symbolic="YES" id="xbZ-pG-9AU"/>
                         <constraint firstItem="eRE-pB-hkd" firstAttribute="top" secondItem="ca5-0c-Pcc" secondAttribute="top" constant="8" id="zwy-CN-dvP"/>
                     </constraints>
                 </view>

@@ -23,9 +23,9 @@ class Evolution3StepsView: UIView {
         if let nib = Bundle.main.loadNibNamed(Evolution3StepsView.identifier,  owner: self, options: nil)?[0] as? Evolution3StepsView {
             nib.lblFirstLevel.text = "00"
             nib.lblSecondLevel.text = "00"
-            nib.imgFirstStep.image = UIImage(named: "")
-            nib.imgSecondStep.image = UIImage(named: "")
-            nib.imgThirdStep.image = UIImage(named: "")
+            nib.imgFirstStep.image = UIImage(named: "pokeballBlue")
+            nib.imgSecondStep.image = UIImage(named: "pokeballBlue")
+            nib.imgThirdStep.image = UIImage(named: "pokeballBlue")
             nib.lblFirstName.text = "pokemonUno"
             nib.lblSecondName.text = "Pokemon_Dos"
             nib.lblThirdName.text = "PKEMON::TRES"

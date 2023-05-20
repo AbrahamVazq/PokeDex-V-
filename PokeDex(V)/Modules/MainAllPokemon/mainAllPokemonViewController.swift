@@ -9,6 +9,8 @@ class mainAllPokemonViewController: UIViewController {
     //MARK: - O U T L E T S
     @IBOutlet weak var lblNamePokemon: UILabel!
     @IBOutlet weak var lblNoPokemon: UILabel!
+    @IBOutlet weak var lblTypeOne: UILabel!
+    @IBOutlet weak var lblTypeTwo: UILabel!
     @IBOutlet weak var txtVDescription: UITextView!
     @IBOutlet weak var cvSprites: UICollectionView!
     @IBOutlet weak var tblAllPokemon: UITableView!
@@ -19,6 +21,7 @@ class mainAllPokemonViewController: UIViewController {
     var presenter: mainAllPokemon_ViewToPresenterProtocol?
     var allPokemon: [Pokemon_entries] = []
     var arrSprites: [String] = []
+    var arrEvolSprites: [String] = []
 
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -56,7 +59,23 @@ class mainAllPokemonViewController: UIViewController {
             arrSprites.append(pokemon.sprites?.other?.home?.front_shiny ?? "")
         }
         
+        
         cvSprites.reloadData()
+        
+        self.setUpTypes(with: pokemon)
+    }
+    
+    func setUpTypes(with pokemon: Pokemon) {
+        var arrTypes: [String] = []
+        for e in pokemon.types ?? [] { arrTypes.append(e.type?.name ?? "") }
+        if arrTypes.count == 2 {
+            self.lblTypeTwo.isHidden = false
+            self.lblTypeOne.text = arrTypes[0]
+            self.lblTypeTwo.text = arrTypes[1]
+        }else{
+            self.lblTypeOne.text = arrTypes[0]
+            self.lblTypeTwo.isHidden = true
+        }
     }
     
     func setEvolutionView(){

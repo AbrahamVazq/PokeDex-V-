@@ -55,7 +55,11 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     var presenter: mainAllPokemon_InteractorToPresenterProtocol? { get set }
     
     func getAllPokemon()
+    
     func getPokemon(of idPokemon: String)
+    
+    func getEvolution(of idPokemon:String)
+    
 }
 
 

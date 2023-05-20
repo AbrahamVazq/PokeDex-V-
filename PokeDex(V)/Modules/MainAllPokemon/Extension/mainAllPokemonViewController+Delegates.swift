@@ -21,7 +21,7 @@ extension mainAllPokemonViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier,
                                                  for: indexPath) as? SimpleTableViewCell ?? SimpleTableViewCell()
         cell.backgroundColor = .PBlue
-        cell.lblTitle.text = allPokemon[indexPath.row].pokemon_species?.name?.capitalized
+        cell.lblTitle.text = "\(indexPath.row + 1) - \(allPokemon[indexPath.row].pokemon_species?.name?.capitalized ?? "")"
         return cell
     }
 }

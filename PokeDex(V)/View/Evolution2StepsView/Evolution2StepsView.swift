@@ -19,10 +19,9 @@ class Evolution2StepsView: UIView {
     class func instantiate(with obj: NSObject) -> Evolution2StepsView {
 
         if let nib = Bundle.main.loadNibNamed(Evolution2StepsView.identifier,  owner: self, options: nil)?[0] as? Evolution2StepsView {
-//            nib.frame.size.height = CGFloat(height )
             nib.lblLevel.text = "00"
-            nib.imgFirstStep.image = UIImage(named: "")
-            nib.imgSecondStep.image = UIImage(named: "")
+            nib.imgFirstStep.image = UIImage(named: "pokeballBlue")
+            nib.imgSecondStep.image = UIImage(named: "pokeballBlue")
             nib.lblFirstName.text = "pokemonUno"
             nib.lblSecondName.text = "Pokemon_Dos"
             
