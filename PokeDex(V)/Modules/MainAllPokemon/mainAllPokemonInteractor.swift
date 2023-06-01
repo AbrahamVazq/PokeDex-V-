@@ -35,4 +35,13 @@ class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
             }else {return}
         }
     }
+    
+    //MARK: - G E T · P O K E M O N · S P E C I E S
+    func getPokeSpecies(with idPokemon: String) {
+        PokeServicesProvider.shared.getPokemonSpecies(of: idPokemon) { response, error in
+            if let response  = response  {
+                (error == nil) ? self.presenter?.responseGetPokeSpeciesFromInteractor(with: response) : self.presenter?.errorToGetSpecies()
+            }else {return}
+        }
+    }
 }

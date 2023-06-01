@@ -30,6 +30,8 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
     func getPokemon(of idPokemon: String)
     
     func getEvolution(of idPokemon:String)
+    
+    func getPokeSpecies(of idPokemon: String)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -59,6 +61,8 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     func getPokemon(of idPokemon: String)
     
     func getEvolution(of idPokemon:String)
+    
+    func getPokeSpecies(with idPokemon:String)
     
 }
 
@@ -93,6 +97,9 @@ protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
     func responseGetPokeEvolutionFromInteractor(with pokeEvol: PokeEvolution)
     func errorToGetEvolution()
     
+    func responseGetPokeSpeciesFromInteractor(with pokeSpecie: PokeSpecies)
+    func errorToGetSpecies()
+    
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -119,6 +126,9 @@ protocol mainAllPokemon_PresenterToViewProtocol: AnyObject {
     
     func updatePokeEvolution(with evol: PokeEvolution)
     func updatePokeEvolutionError()
+    
+    func updatePokeSpecies(with pokeSpecie: PokeSpecies )
+    func updatePokeSpecieError()
     
 }
 

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Names : Codable {
+struct Genera : Codable {
+	let genus : String?
 	let language : Language?
-	let name : String?
 }

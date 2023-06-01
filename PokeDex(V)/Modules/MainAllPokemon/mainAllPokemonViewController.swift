@@ -27,7 +27,13 @@ class mainAllPokemonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpDelegates()
+        PokeLoader.shared.show(in: self.view)
         self.presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.presenter?.getPokeSpecies(of: "1")
     }
     
     func setUpDelegates(){
@@ -48,7 +54,6 @@ class mainAllPokemonViewController: UIViewController {
         self.lblNoPokemon.text = "# \(pokemon.id ?? 0)"
         self.lblNoPokemon.textColor = .PYellow
         self.setUpSprites(with: pokemon)
-        self.setEvolutionView()
     }
     
     func setUpSprites(with pokemon: Pokemon) {
@@ -58,7 +63,6 @@ class mainAllPokemonViewController: UIViewController {
         if pokemon.sprites?.other?.home?.front_shiny != nil {
             arrSprites.append(pokemon.sprites?.other?.home?.front_shiny ?? "")
         }
-        
         
         cvSprites.reloadData()
         
@@ -76,9 +80,13 @@ class mainAllPokemonViewController: UIViewController {
             self.lblTypeOne.text = arrTypes[0]
             self.lblTypeTwo.isHidden = true
         }
+        PokeLoader.shared.hide()
     }
     
-    func setEvolutionView(){
+    func setEvolutionView(with evolutions: PokeEvolution){
+        
+        print("\n\n\n evol --->>> \(evolutions.chain?.evolves_to) \n\n\n")
+        
         let evolutionView = Evolution3StepsView.instantiate(with: NSObject())
         self.vwEvolution.addSubview(evolutionView)
         
@@ -96,8 +104,12 @@ class mainAllPokemonViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
+    func updatePokeSpecies(with pokeSpecie: PokeSpecies) {
+        
+    }
+    
     func updatePokeEvolution(with evol: PokeEvolution) {
-        print("\n\n\n evol --->>> \(evol) \n\n\n")
+        self.setEvolutionView(with: evol)
     }
     
     
@@ -119,6 +131,10 @@ extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
     }
     
     func updatePokemonError() {
+        print(" E R R O R ")
+    }
+    
+    func updatePokeSpecieError() {
         print(" E R R O R ")
     }
     

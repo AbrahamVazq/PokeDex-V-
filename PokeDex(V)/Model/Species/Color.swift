@@ -1,6 +1,6 @@
 import Foundation
 
-struct Pokemon_species : Codable {
+struct Color : Codable {
 	let name : String?
 	let url : String?
 }

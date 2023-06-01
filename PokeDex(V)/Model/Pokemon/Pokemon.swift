@@ -22,5 +22,6 @@ struct Pokemon : Codable {
     let sprites : Sprites?
     let stats : [Stats]?
     let types : [Types]?
+    let url : String?
     let weight : Int?
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Pokemon_species : Codable {
+struct Egg_groups : Codable {
 	let name : String?
 	let url : String?
 }
