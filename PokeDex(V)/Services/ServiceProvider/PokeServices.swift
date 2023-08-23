@@ -16,7 +16,6 @@ final class PokeServicesProvider {
     
     //MARK: - V A R I A B L E S
     static let shared = PokeServicesProvider()
-    
     private let urlAllPokemon = "https://pokeapi.co/api/v2/pokedex/1/"
     private let okStatus = 200 ... 299
     
@@ -64,6 +63,18 @@ final class PokeServicesProvider {
                 withHandler(value, nil)
             case .failure(let error):
                 response.response?.statusCode == 200 ? withHandler(nil,nil) : withHandler(nil,error)
+            }
+        }
+    }
+    
+    func consultService<T: Decodable>(of idPokemon:String = "1", forEndPoint strUrl:PokePaths, withHandler handler: @escaping (T?, AFError?) -> Void ) {
+        guard let url = URL(string: strUrl.getPokePath()) else { return }
+        AF.request(url, method: .get).validate(statusCode: okStatus).responseDecodable(of: T.self) { response in
+            switch response.result {
+            case .success(let value):
+                handler(value, nil)
+            case .failure(let error):
+                response.response?.statusCode == 200 ? handler(nil,nil) : handler(nil,error)
             }
         }
     }
