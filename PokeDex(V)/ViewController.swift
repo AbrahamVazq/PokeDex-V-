@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     
     
     func getAllPokemon(){
-        PokeServicesProvider.shared.getAllPokemon { response, error in
-            self.pokeEntires = response?.pokemon_entries ?? []
-            print("\n\n\n\n\n\n\n\n pokeEntries -> \(self.pokeEntires) \n\n\n\n\n\n\n\n")
-            self.tablePokemon.reloadData()
-        }
+//        PokeServicesProvider.shared.getAllPokemon { response, error in
+//            self.pokeEntires = response?.pokemon_entries ?? []
+//            print("\n\n\n\n\n\n\n\n pokeEntries -> \(self.pokeEntires) \n\n\n\n\n\n\n\n")
+//            self.tablePokemon.reloadData()
+//        }
     }
 
     
@@ -47,8 +47,4 @@ extension ViewController: UITableViewDelegate & UITableViewDataSource {
         cell.lblTitle.text = pokeEntires[indexPath.row].pokemon_species?.name
         return cell
     }
-    
-    
-    
 }
-
