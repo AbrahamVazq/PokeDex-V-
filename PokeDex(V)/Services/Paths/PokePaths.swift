@@ -7,7 +7,6 @@ import Foundation
 enum PokePaths {
     case allPokemon
     
-    
     func getPokePath() -> String {
         switch self {
         case .allPokemon:
