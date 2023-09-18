@@ -12,57 +12,14 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
     var router: mainAllPokemon_PresenterToRouterProtocol?
     
     func viewDidLoad() {
-        interactor?.getAllPokemon()
-        interactor?.getPokemon(of: "1")
-        interactor?.getEvolution(of: "1")
-    }
-    
-    func getPokemon(of idPokemon: String) {
-        interactor?.getPokemon(of: idPokemon)
-    }
-    
-    func getEvolution(of idPokemon:String) {
         
     }
     
-    func getPokeSpecies(of idPokemon: String) {
-        interactor?.getPokeSpecies(with: idPokemon)
-    }
 }
 
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension mainAllPokemonPresenter: mainAllPokemon_InteractorToPresenterProtocol {
-    func responseGetPokeSpeciesFromInteractor(with pokeSpecie: PokeSpecies) {
-        view?.updatePokeSpecies(with: pokeSpecie)
-    }
-    
-    func errorToGetSpecies() {
-        print("Launch Error View")
-    }
-    
-    func responseGetPokeEvolutionFromInteractor(with pokeEvol: PokeEvolution) {
-        view?.updatePokeEvolution(with: pokeEvol)
-    }
-    
-    func errorToGetEvolution() {
-        print("Launch Error View")
-    }
-    
-    func responseGetPokemonFromInteractor(with pokemon: Pokemon) {
-        view?.updatePokemon(with: pokemon)
-    }
-    
-    func errorToGetPokemon() {
-        print("Launch Error View")
-    }
-        
-    func errorToGetPokemon(with entries: [Pokemon_entries]) {
-        print(entries)
-    }
-    
-    func responseGetPokesFromInteractor(with entries: [Pokemon_entries]) {
-        view?.updateView(with: entries)
-    }
+
     
 
 }

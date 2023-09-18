@@ -12,9 +12,7 @@ struct PokeURLConfiguration {
     private var strCurrentLocale: String {
         if #available(iOS 16.0, *) {
             return Locale.current.language.languageCode?.identifier ?? ""
-        } else {
-            return Locale.current.identifier
-        }
+        } else { return Locale.current.identifier }
     }
     
     public init(strMethod: String, strHost: String, path: PathsProtocol) {
@@ -29,7 +27,6 @@ struct PokeURLConfiguration {
         components.scheme = strMethod
         components.host = strHost
         components.path = path.strPathToUse
-        
         return components.url
     }
 }

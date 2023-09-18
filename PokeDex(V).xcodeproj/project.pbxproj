@@ -52,6 +52,7 @@
 		A44C476F2A27C63B00A95270 /* Pal_park_encounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C475F2A27C63A00A95270 /* Pal_park_encounters.swift */; };
 		A44C47702A27C63B00A95270 /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C47602A27C63A00A95270 /* Pokedex.swift */; };
 		A44C47712A27C63B00A95270 /* Growth_rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C47612A27C63A00A95270 /* Growth_rate.swift */; };
+		A4589A872AB82DA9008E897F /* ErrorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4589A862AB82DA9008E897F /* ErrorNetwork.swift */; };
 		A470698A2A087C4A007E1E49 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47069892A087C4A007E1E49 /* Pokemon.swift */; };
 		A47069B92A087C8D007E1E49 /* Red-blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698B2A087C88007E1E49 /* Red-blue.swift */; };
 		A47069BA2A087C8D007E1E49 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470698C2A087C88007E1E49 /* Moves.swift */; };
@@ -162,6 +163,7 @@
 		A44C475F2A27C63A00A95270 /* Pal_park_encounters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pal_park_encounters.swift; sourceTree = "<group>"; };
 		A44C47602A27C63A00A95270 /* Pokedex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
 		A44C47612A27C63A00A95270 /* Growth_rate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Growth_rate.swift; sourceTree = "<group>"; };
+		A4589A862AB82DA9008E897F /* ErrorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetwork.swift; sourceTree = "<group>"; };
 		A47069892A087C4A007E1E49 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		A470698B2A087C88007E1E49 /* Red-blue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Red-blue.swift"; sourceTree = "<group>"; };
 		A470698C2A087C88007E1E49 /* Moves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		34F8452C299AD90000D09061 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				A4589A852AB82D8E008E897F /* Enum */,
 				A413E9022A280BCC00A8E474 /* Loader */,
 				A485D3742A0A25DD00766692 /* Color */,
 				34F84539299AE52100D09061 /* Extension */,
@@ -424,6 +427,14 @@
 				A44C475B2A27C63A00A95270 /* Varieties.swift */,
 			);
 			path = Species;
+			sourceTree = "<group>";
+		};
+		A4589A852AB82D8E008E897F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A4589A862AB82DA9008E897F /* ErrorNetwork.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		A472165F2A0C0075000144A4 /* Evolution */ = {
@@ -717,6 +728,7 @@
 				A44C47702A27C63B00A95270 /* Pokedex.swift in Sources */,
 				A47216672A0C016A000144A4 /* Evolution_details.swift in Sources */,
 				A43CDE562AA701A40074E3C1 /* PokeURLConfiguration.swift in Sources */,
+				A4589A872AB82DA9008E897F /* ErrorNetwork.swift in Sources */,
 				A470698A2A087C4A007E1E49 /* Pokemon.swift in Sources */,
 				A47069D42A087C8D007E1E49 /* Platinum.swift in Sources */,
 				34F84531299ADB9D00D09061 /* Namespace.swift in Sources */,

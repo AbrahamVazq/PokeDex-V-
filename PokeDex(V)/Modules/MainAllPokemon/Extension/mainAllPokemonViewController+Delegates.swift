@@ -7,7 +7,7 @@ import UIKit
 //MARK: - UI · T A B L E · V I E W · D E L E G A T E
 extension mainAllPokemonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.presenter?.getPokemon(of: "\(allPokemon[indexPath.row].entry_number ?? 1)")
+        #warning("didSelectRow tapped")
     }
 }
 

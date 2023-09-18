@@ -33,7 +33,7 @@ class mainAllPokemonViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.presenter?.getPokeSpecies(of: "1")
+//        self.presenter?.getPokeSpecies(of: "1")
     }
     
     func setUpDelegates(){
@@ -65,7 +65,6 @@ class mainAllPokemonViewController: UIViewController {
         }
         
         cvSprites.reloadData()
-        
         self.setUpTypes(with: pokemon)
     }
     
@@ -84,9 +83,6 @@ class mainAllPokemonViewController: UIViewController {
     }
     
     func setEvolutionView(with evolutions: PokeEvolution){
-        
-        print("\n\n\n evol --->>> \(evolutions.chain?.evolves_to) \n\n\n")
-        
         let evolutionView = Evolution3StepsView.instantiate(with: NSObject())
         self.vwEvolution.addSubview(evolutionView)
         
@@ -99,43 +95,10 @@ class mainAllPokemonViewController: UIViewController {
             ]
         )
     }
-    
 }
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
-    func updatePokeSpecies(with pokeSpecie: PokeSpecies) {
-        
-    }
-    
-    func updatePokeEvolution(with evol: PokeEvolution) {
-        self.setEvolutionView(with: evol)
-    }
-    
-    
-    func updatePokemon(with pokemon: Pokemon) {
-        self.updateMainView(with: pokemon)
-    }
-        
-    func updateView(with entries: [Pokemon_entries]) {
-        self.allPokemon = entries
-        self.tblAllPokemon.reloadData()
-    }
-    
-    func updateViewError(with entries: [Pokemon_entries]) {
-        print(" E R R O R ")
-    }
-    
-    func updatePokeEvolutionError() {
-        print(" E R R O R ")
-    }
-    
-    func updatePokemonError() {
-        print(" E R R O R ")
-    }
-    
-    func updatePokeSpecieError() {
-        print(" E R R O R ")
-    }
+
     
 }

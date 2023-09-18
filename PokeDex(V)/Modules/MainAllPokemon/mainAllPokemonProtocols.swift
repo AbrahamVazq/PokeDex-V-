@@ -26,12 +26,6 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
     var router: mainAllPokemon_PresenterToRouterProtocol? { get set }
     
     func viewDidLoad()
-    
-    func getPokemon(of idPokemon: String)
-    
-    func getEvolution(of idPokemon:String)
-    
-    func getPokeSpecies(of idPokemon: String)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -55,15 +49,8 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
 // MARK: PRESENTER -> INTERACTOR
 protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     var presenter: mainAllPokemon_InteractorToPresenterProtocol? { get set }
-    
+
     func getAllPokemon()
-    
-    func getPokemon(of idPokemon: String)
-    
-    func getEvolution(of idPokemon:String)
-    
-    func getPokeSpecies(with idPokemon:String)
-    
 }
 
 
@@ -87,19 +74,8 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
-    
-    func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
-    func errorToGetPokemon(with entries: [Pokemon_entries])
-    
-    func responseGetPokemonFromInteractor(with pokemon: Pokemon)
-    func errorToGetPokemon()
-    
-    func responseGetPokeEvolutionFromInteractor(with pokeEvol: PokeEvolution)
-    func errorToGetEvolution()
-    
-    func responseGetPokeSpeciesFromInteractor(with pokeSpecie: PokeSpecies)
-    func errorToGetSpecies()
-    
+//    func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
+//    func errorToGetPokemon(with entries: [Pokemon_entries])
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -118,17 +94,6 @@ protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
 protocol mainAllPokemon_PresenterToViewProtocol: AnyObject {
     var presenter: mainAllPokemon_ViewToPresenterProtocol? { get set }
     
-    func updateView(with entries: [Pokemon_entries])
-    func updateViewError(with entries: [Pokemon_entries])
-    
-    func updatePokemon(with pokemon: Pokemon)
-    func updatePokemonError()
-    
-    func updatePokeEvolution(with evol: PokeEvolution)
-    func updatePokeEvolutionError()
-    
-    func updatePokeSpecies(with pokeSpecie: PokeSpecies )
-    func updatePokeSpecieError()
     
 }
 
