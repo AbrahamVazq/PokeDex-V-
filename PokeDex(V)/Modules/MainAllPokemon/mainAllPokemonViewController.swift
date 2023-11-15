@@ -29,11 +29,7 @@ class mainAllPokemonViewController: UIViewController {
         self.setUpDelegates()
         self.presenter?.viewDidLoad()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
+        
     func setUpDelegates(){
         self.tblAllPokemon.delegate = self
         self.tblAllPokemon.dataSource = self
