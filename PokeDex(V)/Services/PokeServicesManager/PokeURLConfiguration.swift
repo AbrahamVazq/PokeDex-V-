@@ -31,6 +31,15 @@ struct PokeURLConfiguration {
     }
 }
 
+
+extension String: PathsProtocol {
+    var strPathToUse: String {
+        return self
+    }
+    
+    
+}
+
 protocol PathsProtocol {
     var strPathToUse: String { get }
 }

@@ -8,14 +8,18 @@ import Foundation
 class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
     
     weak var presenter: mainAllPokemon_InteractorToPresenterProtocol?
-    
+    var service: NetworkAPIProtocol = PokeServicesManager(urlConfiguration:
+                                                            PokeURLConfiguration(strMethod: "https", strHost: "pokeapi.co", path: "/api/v2/pokedex/1") )
     //MARK: - G E T · A L L · P O K E M O N
     func getAllPokemon(){
-//        PokeServicesProvider.shared.getAllPokemon { response, error in
-//            (error == nil) ?
-//            self.presenter?.responseGetPokesFromInteractor(with: response?.pokemon_entries ?? []) :
-//            self.presenter?.errorToGetPokemon(with: [])
-//        }
+        service.launchService { [weak self] (result: Result<PokedexNational, ErrorNetwork>) in
+            switch result {
+            case .success(let success):
+                self?.presenter?.responseGetPokesFromInteractor(with: success.pokemon_entries ?? [])
+            case .failure(let error):
+                self?.presenter?.errorToGetPokemon(with: error)
+            }
+        }
     }
     
     //MARK: - G E T · P O K E M O N

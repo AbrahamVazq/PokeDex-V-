@@ -27,13 +27,11 @@ class mainAllPokemonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpDelegates()
-        PokeLoader.shared.show(in: self.view)
         self.presenter?.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        self.presenter?.getPokeSpecies(of: "1")
     }
     
     func setUpDelegates(){
@@ -99,6 +97,14 @@ class mainAllPokemonViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
-
+    
+    func updateView(with entries: [Pokemon_entries]) {
+        self.allPokemon = entries
+        DispatchQueue.main.async { self.tblAllPokemon.reloadData() }
+    }
+    
+    func updateWith(error: ErrorNetwork) {
+        //FIXME: Imprimir error o pantalla de error
+    }
     
 }

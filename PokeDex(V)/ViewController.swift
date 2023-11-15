@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     var pokeEntires: [Pokemon_entries] = []
     
+    /// Definir una variable de tipo protocolo
+    var service: NetworkAPIProtocol = PokeServicesManager(urlConfiguration: 
+                                                            PokeURLConfiguration(strMethod: "https", strHost: "pokeapi.co", path: "/api/v2/pokedex/1") )
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setTableConfig()
@@ -25,8 +29,25 @@ class ViewController: UIViewController {
         self.tablePokemon.register(SimpleTableViewCell.nib, forCellReuseIdentifier: SimpleTableViewCell.identifier)
     }
     
+//    func setUpBackground(with type: cardType) {
+//        
+//        view.backgroundColor = UIColor(patternImage: type.getBackground()! )
+//        switch type {
+//        case .normalMonster
+//            
+//        }
+//    }
     
     func getAllPokemon(){
+        service.launchService { [weak self] (result: Result<PokedexNational, ErrorNetwork>) in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+        
 //        PokeServicesProvider.shared.getAllPokemon { response, error in
 //            self.pokeEntires = response?.pokemon_entries ?? []
 //            print("\n\n\n\n\n\n\n\n pokeEntries -> \(self.pokeEntires) \n\n\n\n\n\n\n\n")

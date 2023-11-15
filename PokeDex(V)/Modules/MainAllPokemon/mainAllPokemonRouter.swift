@@ -24,6 +24,4 @@ class mainAllPokemonRouter {
     }
 }
 
-extension mainAllPokemonRouter: mainAllPokemon_PresenterToRouterProtocol {
-    
-}
+extension mainAllPokemonRouter: mainAllPokemon_PresenterToRouterProtocol {}
