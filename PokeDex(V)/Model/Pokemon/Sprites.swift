@@ -1,14 +1,14 @@
 import Foundation
 
 struct Sprites : Codable {
-	let back_default : String?
-	let back_female : String?
-	let back_shiny : String?
-	let back_shiny_female : String?
-	let front_default : String?
-	let front_female : String?
-	let front_shiny : String?
-	let front_shiny_female : String?
-	let other : Other?
-	let versions : Versions?
+	var back_default : String?
+    var back_female : String?
+    var back_shiny : String?
+    var back_shiny_female : String?
+    var front_default : String?
+    var front_female : String?
+    var front_shiny : String?
+    var front_shiny_female : String?
+    var other : Other?
+    var versions : Versions?
 }

@@ -26,6 +26,9 @@ protocol mainAllPokemon_ViewToPresenterProtocol: AnyObject {
     var router: mainAllPokemon_PresenterToRouterProtocol? { get set }
     
     func viewDidLoad()
+    
+    func getSpriteOfPokemon(id: Int)
+    
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -51,6 +54,7 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
     var presenter: mainAllPokemon_InteractorToPresenterProtocol? { get set }
 
     func getAllPokemon()
+    func getSpriteOfPokemon(id: Int)
 }
 
 
@@ -74,8 +78,11 @@ protocol mainAllPokemon_PresenterToInteractorProtocol: AnyObject {
 
 // MARK: INTERACTOR -> PRESENTER
 protocol mainAllPokemon_InteractorToPresenterProtocol: AnyObject {
+    
     func responseGetPokesFromInteractor(with entries: [Pokemon_entries])
-    func errorToGetPokemon(with error: ErrorNetwork)
+    func responseGetPokesFromInteractor(with pokemon: Pokemon)
+    
+    func errorToGetInfo(with error: ErrorNetwork)
 }
 
 //MARK: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -95,6 +102,8 @@ protocol mainAllPokemon_PresenterToViewProtocol: AnyObject {
     var presenter: mainAllPokemon_ViewToPresenterProtocol? { get set }
     
     func updateView(with entries: [Pokemon_entries])
+    func updateView(with pokemon: Pokemon)
+    
     func updateWith(error:ErrorNetwork)
 }
 

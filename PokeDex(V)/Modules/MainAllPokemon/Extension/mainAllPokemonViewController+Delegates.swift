@@ -7,7 +7,11 @@ import UIKit
 //MARK: - UI · T A B L E · V I E W · D E L E G A T E
 extension mainAllPokemonViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        #warning("didSelectRow tapped")
+        if let idPokemon = self.allPokemon[indexPath.row].entry_number {
+            print("\n\n\n idPokemon --->>> \(idPokemon) \n\n\n")
+            self.view.activityStartAnimating(backgroundColor: UIColor.black.withAlphaComponent(0.5))
+            self.presenter?.getSpriteOfPokemon(id: idPokemon)
+        }
     }
 }
 

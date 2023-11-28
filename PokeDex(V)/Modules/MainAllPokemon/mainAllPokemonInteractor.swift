@@ -8,16 +8,31 @@ import Foundation
 class mainAllPokemonInteractor: mainAllPokemon_PresenterToInteractorProtocol {
     
     weak var presenter: mainAllPokemon_InteractorToPresenterProtocol?
-    var service: NetworkAPIProtocol = PokeServicesManager(urlConfiguration:
-                                                            PokeURLConfiguration(strMethod: "https", strHost: "pokeapi.co", path: "/api/v2/pokedex/1") )
+   
     //MARK: - G E T · A L L · P O K E M O N
     func getAllPokemon(){
+        let service: NetworkAPIProtocol = PokeServicesManager(urlConfiguration:
+                                                                PokeURLConfiguration(strMethod: "https", strHost: "pokeapi.co", path: "/api/v2/pokedex/1") )
         service.launchService { [weak self] (result: Result<PokedexNational, ErrorNetwork>) in
             switch result {
             case .success(let success):
                 self?.presenter?.responseGetPokesFromInteractor(with: success.pokemon_entries ?? [])
             case .failure(let error):
-                self?.presenter?.errorToGetPokemon(with: error)
+                self?.presenter?.errorToGetInfo(with: error)
+            }
+        }
+    }
+    
+    func getSpriteOfPokemon(id: Int) {
+        let iID: Int = (id == 0) ? 1 : id
+        let service: NetworkAPIProtocol = PokeServicesManager(urlConfiguration:
+                                                                PokeURLConfiguration(strMethod: "https", strHost: "pokeapi.co", path: "/api/v2/pokemon/\(iID)") )
+        service.launchService { [weak self] (result: Result<Pokemon, ErrorNetwork>) in
+            switch result {
+            case .success(let success):
+                self?.presenter?.responseGetPokesFromInteractor(with: success)
+            case .failure(let error):
+                self?.presenter?.errorToGetInfo(with: error)
             }
         }
     }

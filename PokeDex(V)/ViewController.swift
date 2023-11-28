@@ -47,12 +47,7 @@ class ViewController: UIViewController {
                 print(failure)
             }
         }
-        
-//        PokeServicesProvider.shared.getAllPokemon { response, error in
-//            self.pokeEntires = response?.pokemon_entries ?? []
-//            print("\n\n\n\n\n\n\n\n pokeEntries -> \(self.pokeEntires) \n\n\n\n\n\n\n\n")
-//            self.tablePokemon.reloadData()
-//        }
+    
     }
 
     

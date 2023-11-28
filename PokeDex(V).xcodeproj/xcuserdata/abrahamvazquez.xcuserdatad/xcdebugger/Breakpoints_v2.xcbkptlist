@@ -3,4 +3,54 @@
    uuid = "9F3625B8-2D88-429D-BE46-486AC1057F01"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "049C9A00-8D9B-4EBC-8075-E505A5BCB1EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokeDex(V)/Modules/MainAllPokemon/Extension/mainAllPokemonViewController+Delegates.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "049C9A00-8D9B-4EBC-8075-E505A5BCB1EF - e2e199aacd665e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokeDex_V_.mainAllPokemonViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "PokeDex(V)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abrahamvazquez/Documents/Desarrollos/PokeDex(V)/PokeDex(V)/Modules/MainAllPokemon/Extension/mainAllPokemonViewController+Delegates.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "049C9A00-8D9B-4EBC-8075-E505A5BCB1EF - e2e199aacd665e93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokeDex_V_.mainAllPokemonViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "PokeDex(V)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abrahamvazquez/Documents/Desarrollos/PokeDex(V)/PokeDex(V)/Modules/MainAllPokemon/Extension/mainAllPokemonViewController+Delegates.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

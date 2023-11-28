@@ -27,6 +27,11 @@ class mainAllPokemonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpDelegates()
+        self.getServiceToPresenter()
+    }
+    
+    func getServiceToPresenter(){
+        self.view.activityStartAnimating(backgroundColor: UIColor.black.withAlphaComponent(0.5))
         self.presenter?.viewDidLoad()
     }
         
@@ -93,10 +98,19 @@ class mainAllPokemonViewController: UIViewController {
 
 // MARK: - P R E S E N T E R · T O · V I E W
 extension mainAllPokemonViewController: mainAllPokemon_PresenterToViewProtocol {
+    func updateView(with pokemon: Pokemon) {
+
+        DispatchQueue.main.async { 
+            self.view.activityStopAnimating()
+            self.updateMainView(with: pokemon) }
+    }
     
     func updateView(with entries: [Pokemon_entries]) {
         self.allPokemon = entries
-        DispatchQueue.main.async { self.tblAllPokemon.reloadData() }
+        
+        DispatchQueue.main.async { 
+            self.view.activityStopAnimating()
+            self.tblAllPokemon.reloadData() }
     }
     
     func updateWith(error: ErrorNetwork) {

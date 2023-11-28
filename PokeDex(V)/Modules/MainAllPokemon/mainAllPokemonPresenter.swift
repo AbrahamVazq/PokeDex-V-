@@ -13,6 +13,11 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
     
     func viewDidLoad() {
         interactor?.getAllPokemon()
+        interactor?.getSpriteOfPokemon(id: 0)
+    }
+    
+    func getSpriteOfPokemon(id: Int){
+        interactor?.getSpriteOfPokemon(id: id)
     }
     
 }
@@ -20,12 +25,10 @@ class mainAllPokemonPresenter: mainAllPokemon_ViewToPresenterProtocol {
 // MARK: - I N T E R A C T O R · T O · P R E S E N T E R
 extension mainAllPokemonPresenter: mainAllPokemon_InteractorToPresenterProtocol {
     
-    func responseGetPokesFromInteractor(with entries: [Pokemon_entries]) {
-        view?.updateView(with: entries)
-    }
-
-    func errorToGetPokemon(with error: ErrorNetwork) {
-        print("\n\n\n error --->>> \(error) \n\n\n")
-    }
-
+    func errorToGetInfo(with error: ErrorNetwork) { view?.updateWith(error: error) }
+    
+    func responseGetPokesFromInteractor(with pokemon: Pokemon) { view?.updateView(with: pokemon) }
+    
+    func responseGetPokesFromInteractor(with entries: [Pokemon_entries]) { view?.updateView(with: entries) }
+    
 }
